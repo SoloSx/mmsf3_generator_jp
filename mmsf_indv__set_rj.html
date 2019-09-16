@@ -1,0 +1,804 @@
+
+<meta charset="UTF-8">
+<meta name="author" content="Thiste">
+<meta name="viewpoint" content="user-scalable">
+<meta name="description" content="流星のロックマン3ブラックエース、レッドジョーカーのチートコードの生成をするジェネレーターです"/>
+<meta name="keyword" content="流星のロックマン,流星ロックマン3,BA,RJ,改造,チート,PAR,チート,チートコード"/>
+<title> MMSF3 流星のロックマン3 チートコードジェネレーター</title>
+<link rel="stylesheet" href="mmsf3.css">
+</head>
+
+
+
+
+
+		<div><id="titie-text" class="explanation">
+		<div class="shrt-sentence">
+			<h1 class="h3">MMSF3チートコードジェネレーター</h1>
+			<p1> 注意書き※※改造コードを使用する際は自己責任でお願いしますby製作者※※<p1>
+			<text></text>
+		</div>
+		</div>
+
+	<div class="sidebar">
+			<h2 class="setting">各種改造設定項目</h2>
+			<ul class="setting-column">
+				<li class="rj_indv">
+					<a href="mmsf_indv_set_rj.html" class="setting-link ">ロックマン設定 Ver.RJ</a>
+				</li>
+					<li class="rj_bro">
+					<a href="mmsf_bro_set_rj.html" class="setting-link ">ブラザー設定 Ver.RJ</a>
+				</li>
+				<li class="ba_indv">
+					<a href="mmsf_indv_set_ba.html" class="setting-link ">ロックマン設定 Ver.BA</a>
+				</li>
+				<li class="ba_bro">
+					<a href="mmsf_bro_set_rj.html" class="setting-link ">ブラザー設定 Ver.BA</a>
+				</li>
+					<li class="readme">
+					<a href="index.html" class="setting-link ">最初にお読みください</a>
+				</li>
+			</ul>
+	</div>
+
+		<div class="setting-table">
+				<div class="table-body">
+					<h2>ロックマンの設定(ノイズド、ホワイト、レゾンカード、ノイズチェンジ) Ver.RJ</h2>
+</div>
+	<table border="1">
+								<form name="indv">
+									<tr>
+										<td>自分のノイズ：
+									<select name="noize">
+													<option value="00">初期
+													<option value="01">リブラ
+													<option value="02">コーヴァス
+													<option value="03">キャンサー>
+													<option value="04">ジェミニ
+													<option value="05">オヒュカス
+													<option value="06">キグナス
+													<option value="07">オックス
+													<option value="08">ヴァルゴ
+													<option value="09">クラウン
+													<option value="0A">ウルフ
+													<option value="0B">ブライ
+										</select>
+									</td>
+
+	<td>レゾンカード：
+		<select name="rezon">
+	<option value="00">バトル
+	<option value="01">ファイア
+	<option value="02">アクア
+	<option value="03">サンダー
+	<option value="04">ウッド
+	<option value="05">ソード
+	<option value="06">ブレイク
+	<option value="07">ガード
+	<option value="08">パラライズ
+	<option value="09">ファイナライズ
+	</select>
+	</td>
+
+	<td colspan="4">
+		ホワイトカード:
+		<select name="whitecard">
+		<option value="00">	"なし
+		<option value="01">	プラズマガン,プラズマガン,エアスプレッド1,ビートスイング1
+		<option value="02"> ワイドソード,リカバリー30,グランドウェーブ1,バリア
+		<option value="03">	マッドバルカン1,ミニグレネード,ロングソード,キャノン
+		<option value="04">	プラズマガン,インビジブル,グランドウェーブ1,ビーストスイング1
+		<option value="05">	ディバイドライン,ロングソード,マッドバルカン1,リカバリー30
+		<option value="06">	インビジブル,グランドウェーブ1,ソード,マッドバルカン1
+  	<option value="07">	ビートスイング1,キャノン,プラズマガン,グラビティプラス
+		<option value="08"> ミニグレネード,ロングソード,ロングソード,リカバリー30"
+		<option value="09">	プラズマガン,ワイドソード,グランドウェーブ1,グランドウェーブ1
+		<option value="0A">	エアスプレッド1,マッドバルカン1,ビートスイング1,エアスプレッド1
+		<option value="0B">	フラッシュスピア1,フラッシュスピア1,マッドバルカン1,グラビティプラス
+		<option value="0C">	ビートスイング1,ビートスイング1,エアスプレッド1,アタック+10
+  	<option value="0D">	グランドウェーブ1,マッドバルカン1,アタック+10,ビートスイング1
+    <option value="0E">	エアスプレッド2,ワイドウェーブ1,グラビティプラス,ディバイドライン
+		<option value="0F">	ジェットアタック1,ジェットアタック1,グラビティプラス,リカバリー50
+		<option value="10">	ドリルアーム1,ドリルアーム1,アタック+10,ジェットアタック1
+		<option value="11">	ワイドウェーブ1,シャークカッター1,シャークカッター1,ワイドウェーブ1
+		<option value="12">	グランドウェーブ2,ギザホイール1,ギザホイール1,マヒプラス
+		<option value="13">	アイススピニング1,アタック+10,ワイドウェーブ1,ワイドウェーブ1
+		<option value="14">	シャークカッター1,マヒプラス,グラビティプラス,シャークカッター1
+  	<option value="15">	エアスプレッド3,プラスキャノン,ギザホイール2,ギザホイール2
+ 		<option value="16">	エドギリブレード1,エドギリブレード1,ギザホイール2,マヒプラス
+		<option value="17"> バブルフック1,ワイドウェーブ2,マヒプラス,バブルフック1
+	 	<option value="18">	ビートスイング2,ビートスイング2,ドリルアーム1,プラスキャノン
+		<option value="19">	アンガーファイア1,アンガーファイア1,ヒートアッパー2,ヒートアッパー2
+		<option value="1A">	カウントボム1,ヒートアッパー2,アンガーファイア1,アタック+10
+		<option value="1B">	パウダーシュート1,シュリシュリケン2,ローリングナッツ1,ダミースパイダー1
+		<option value="1C">	ローリングナッツ1,ローリングナッツ1,パウダーシュート1,パウダーシュート1
+		<option value="1D">	フラッシュスピア3,フラッシュスピア3,ステルスレーザー2,イナズマヘッド1
+		<option value="1E">	ステルスレーザー2,マヒプラス,イナズマヘッド1,マミーハンド1
+		<option value="1F">	ドリルアーム3,ハンマーウェポン1,ヘビーキャノン,タイフーンダンス
+		<option value="20">	カウントボム2,マシーンフレイム1,ヒートアッパー3,アンガーファイア2
+		<option value="21">	"ビートスイング3,ビートスイング2,ダブルイーター,グレートアックス
+		<option value="22">	ワイドウェーブ3,シャークカッター3,ワイドウェーブ2,シャークカッター3
+		<option value="23">	カウントボム2,ヒートアッパー3,アンガーファイア3,アタックパネル
+		<option value="24">	パウダーシュート3,シュリシュリケン2,ローリングナッツ3,ダミースパイダー3
+		<option value="25">	フラッシュスピア3,イナズマヘッド2,フラッシュスピア3,ステルスレーザー2
+		<option value="26">	ドリルアーム3,ドリルアーム2,マヒプラス,ハンマーウェポン3
+		<option value="27">	ステルスレーザー3,マヒプラス,イナズマヘッド2,マミーハンド3
+		<option value="28">	マシーンフレイム2,ヒートアッパー3,カウントボム3,アンガーファイア3
+		<option value="29">	バブルフック3,バブルフック3,マヒプラス,ワイドウェーブ3
+		<option value="2A">	シュリシュリケン3,ダミースパイダー3,ローリングナッツ3,ウッドスラッシュ
+		<option value="2B">	フラッシュスピア3,ステルスレーザー3,イナズマヘッド3,エレキスラッシュ
+		<option value="2C">	トルネードダンス,ウィンディアタック3,ドリルアーム3,ハンマーウェポン3
+		<option value="2D">	プラズマガン,ステルスレーザー2,マミーハンド1,イナズマヘッド1
+		<option value="2E">	グリーンインク,ダミースパイダー1,シュリシュリケン1,パウダーシュート2
+		<option value="2F">	ホイッスル,ドリルアーム1,ドリルアーム2,ウィンディアタック1
+		<option value="30">	バブルフック1,バブルフック1,フラッシュスピア2,イナズマヘッド2
+		<option value="31"> ブラックインク,フラッシュスピア2,バブルフック1,マミーハンド2
+		<option value="32">	ウィンディアタック1,ウィンディアタック1,ノイズウィザード1,ノイズウィザード2
+		<option value="33">	ギザホイール2,グランドウェーブ2,シュリシュリケン1,アイススピニング1
+		<option value="34">	ヘビーキャノン,ドリルアーム2,ヒートアッパー2,ヘビードーン1
+		<option value="35">	ヒールウィザード1,バブルフック1,エレキスラッシュ,ダミースパイダー1
+		<option value="36">	バリア,キャノン,キャノン,キャノン
+		<option value="37">  ダブルイーター,ホイッスル,ビーストスイング3,グレートアックス
+		<option value="38">	ローリングナッツ2,ローリングナッツ1,マシーンフレイム1,カウントボム3
+		<option value="39">	アイスグレネード,アイスグレネード,シャークカッター2,ワイドウェーブ2
+		<option value="3A">	エドギリブレード3,エドギリブレード3,エドギリブレード2,エドギリブレード1
+		<option value="3B">	シンクロフック1,フリーズナックル,ヒートアッパー3,スタンナックル
+		<option value="3C">	ファイア+30,マシーンフレイム3,アンガーファイア3,オックスファイアV2
+		<option value="3D">	アクア+30,シャークカッター3,バブルフック3,ダイヤアイスバーンV2
+		<option value="3E">	シュリシュリケン3,ワイドウェーブ3,ステルスレーザー3,スマイルコイン3
+		<option value="3F">	マシーンフレイム3,ダバフレイム3,アンガーファイア3,ヒートアッパー3
+		<option value="40">	アイススピニング3,ワイドウェーブ3,シャークカッター3,バブルフック3
+		<option value="41">	スカルアロー3,スカルアロー3,ジェットアタック3,ハンマーウェポン3
+		<option value="42">	ビートスイング3,ビートスイング3,ヒールウィザード3,デスサイズ3
+		<option value="43">	トルネードダンス,エアスプレッド3,バルカンシード3,マッドバルカン3
+		<option value="44">	パニッククラウド,パニッククラウド,フラッシュスピア3,パウダーシュート3
+		<option value="45">	エレキスラッシュ,マミーハンド3,ダミースパイダー3,サンダーオブアース3
+		<option value="46">	マシーンフレイム3,ホワイトメテオ,ヘビードーン3,カウントボム3
+		<option value="47">	ミニグレネード,ソード,ワイドソード,ロングソード
+		<option value="48">	ウィンディアタック3,トルネードダンス,コガラシ3,デスサイズ3
+		<option value="49">	ソードファイター3,エレキスラッシュ,ウッドスラッシュ,ダンシングブレード3
+		<option value="4A">	アイスグレネード,ワイドウェーブ3,シャークカッター3,フレイムアックス
+		<option value="4B">	グレートアックス,ハンマーウェポン3,ドリルアーム3,ブレイクサーベル
+		<option value="4C">	アンガーファイア3,カウントボム3,ボボボンボム3,ボボボンボム3
+		<option value="4D">	エレキ+30,フラッシュスピア3,イナズマヘッド3,スペードマグネッツV3
+		<option value="4E">	ウッド+30,コガラシ3,バルカンシード3,クラブストロングV3
+		<option value="4F">	ブレイクサーベル,ドリルアーム3,ソードファイター3,アシッドエースV3
+		<option value="50">	スタンナックル,フリーズナックル,ポイズンナックル,デストロイアッパー
+		<option value="51">	フラッシュスピア2,シュリシュリケン2,ヒートアッパー2,シャークカッター2
+		<option value="52">	"ウッドスラッシュ,ダミースパイダー2,ステルスレーザー2,シュリシュリケン2
+		<option value="53">	メテオライトB,グラビティプラス,ワイドウェーブ1,ビートスイング1
+		<option value="54">	Aブレイザー,アタック+10,ヒートアッパー1,ビートスイング1
+		<option value="55">	ビートスイング1,グラビティプラス,アイススピニング1,ギザホイール1
+		<option value="56">	ヒートアッパー2,アンガーファイア1,カウントボム2,ダバフレイム1
+		<option value="57">	ワイドウェーブ3,シャークカッター2,ブルーインク,アイスグレネード
+		<option value="58">	フラッシュスピア3,エレキスラッシュ,エレキスラッシュ,イナズマヘッド2
+		<option value="59">	パウダーシュート3,バルカンシード1,シュリシュリケン3,バルカンシード2
+		<option value="5A">	タイフーンダンス,トルネードダンス,ウィンディアタック3,デスサイズ2
+		<option value="5B">	ヒートアッパー3,ハンマーウェポン3,ブレイクサーベル,ヘビードーン3
+		<option value="5C">	グランドウェーブ3,ソードファイター1,ノイズドウィザード2,ドリルアーム3
+		<option value="5D">	ダブルイーター,ヒールウィザード2,ビートスイング3,ジャックコーヴァス
+		<option value="5E">	ダブルイーター,バブルフック,ワイドウェーブ3,クイーンヴァルゴ
+		<option value="5F">	ハンマーウェポン3,ヒートアッパー3,グレートアックス,グレイブジョーカー
+	  <option value="60">	ブレイクサーベル,ステルスレーザー3,ギザホイール3,アシッドエース
+			</select>
+	</td>
+</tr>
+<tr>
+	<td>
+		ノイズドカード01:
+		<select name=nkg_01>
+		<option value="64"> なし
+		<option value="01"> モアイアンN(ブレイク+10)
+		<option value="00"> レオキングダムN(ファイアG.A+)
+		<option value="02"> オックスファイアN(スーパーアーマー)
+		<option value="03"> ハンマリーN(HP+250)
+		<option value="05"> アカシーサーN(Sアタックパネル)
+		<option value="04"> メラマンダN(ファイア+10)
+		<option value="06"> デスカウントN(フラッシュボディ)
+		<option value="07"> ストンゴN(Cヘビードーン)
+		<option value="08"> メットリオN(リフレクト)
+		<option value="09"> ボボンN(Sボムライザー)
+		<option value="0A"> ジャックコーヴァスN(ファイア+20)
+		<option value="0B"> モエローダーN(HP+150)
+		<option value="0C"> オロロンN(HP+200)
+		<option value="0D"> フレイマーN(CMフレイム)
+		<option value="0E"> ダバダンスN(Sアタック+10)
+		<option value="0F"> シリウスN(ブレイク+20)
+		<option value="10">ドッカーンN(ファイア+10)
+		<option value="11"> リブラバランスN(HP+400)
+		<option value="12"> エドレードN(ソード+10)
+		<option value="13"> ウォーロックコピーN(Sダブルイーター)
+		<option value="14"> イワガンコN(C+)
+		<option value="15"> ハープノートN(ノーマルG.A+)
+		<option value="16"> ヘルブラックN(+ポイズンパネル)
+		<option value="17"> アポロンフレイムN(ファーストオーラ)
+		<option value="18"> ラビジェットN(+アイスパネル)
+		<option value="19"> キルシャークN(アクア+10)
+		<option value="1A"> オリガジェネラルN(Sホイッスル)
+		<option value="1B"> ホイルズN(Cギザホイール)
+		<option value="1C"> スノーゴロンN(ファーストバリア)
+		<option value="1D"> ダイヤアイスバーンN(アクア+20)
+		<option value="1E"> オクタリンN(Sブラックインク)
+		<option value="1F"> ピラニッシュN(HP+250)
+		<option value="20"> ネバーラN(グラビティボディ)
+		<option value="21"> シシカシューN(プラスパニック)
+		<option value="22"> ペガサスマジックN(アクアG.A+)
+		<option value="23"> プルミンN(アクア+10)
+		<option value="24"> サワニガーN(Sアイス)
+		<option value="25"> ペンキラーN(CIスピニング)
+		<option value="26"> ジャンクネスN(ブレイク+10)
+		<option value="27"> ジャミンガーN(HP+250)
+		<option value="28"> イエティブリザードN(フリーズボディ)
+		<option value="29">アロスカルN(プラスグラビティ)
+		<option value="2A"> ヒールウィザードN(+Pパネル)
+		<option value="2B"> キャノベースN(HP+150)
+		<option value="2C"> ブラキオウェーブN(Sマヒプラス)
+		<option value="2D"> クイーンヴァルゴN(メガクラス+1)
+		<option value="2E"> ニョロフーンN(HP+250)
+		<option value="2F"> キャンサーバブルN(バブルボディ)
+		<option value="30"> イナドランN(サンダー+10)
+		<option value="31"> ムーンディザスターN(HP+300)
+		<option value="32"> ゴロボルタN(SPクラウド)
+		<option value="33"> アイズN(プラスインビジ)
+		<option value="34"> キルミィN(HP+200)
+		<option value="35"> ファントムブラックN(アンダーシャツ)
+		<option value="36"> エレミーラN(HP+150)
+		<option value="37"> ノイズドウィザードN(+ゼツエンパネル)
+		<option value="38"> バルカナN(Cマッドバルカン)
+		<option value="39"> ビグリッパN(HP+250)
+		<option value="3A"> ナイナイN(プラスブラインド)
+		<option value="3B"> ブライN(ソード+20)
+		<option value="3C"> バサリカN(HP+200
+		<option value="3D"> ベルゴングN(HP+150)
+		<option value="3E"> マイリーN(HP+150)
+		<option value="3F"> スピアードN(CFスピア)
+		<option value="40"> クラウンサンダーN(SパラライズS)
+		<option value="41"> ホタローN(サンダー+10)
+		<option value="42"> ビリーエースN(プラスパラライズ)
+		<option value="43"> エンプティーN(パラライズボディ)
+		<option value="44"> スペードマグネッツN(サンダー+20)
+		<option value="45"> ステルスN(HP+150)
+		<option value="46"> マジョネールN(カードリカバリー)
+		<option value="47"> ジェミニスパークN(サンダーG.A+)
+		<option value="48"> ムーキューブN(CMテクノロジー)
+		<option value="49"> モジャヘイN(ウッド+10)
+		<option value="4A"> ウルフフォレストN(HP+400)
+		<option value="4B"> モノソードN(ソード+10)
+		<option value="4C"> コガラシマルN(プラスウィンド)
+		<option value="4D"> パウダリーフN(+グリーンパネル)
+		<option value="4E"> ゴートカンフーN(クイックゲージ)
+		<option value="4F"> クラブストロングN(ウッド+20)
+		<option value="50"> カカペットN(Sクサムラ)
+		<option value="51"> パサランN(Sリカバリー30)
+		<option value="52"> スパイダラN(HP+250)
+		<option value="53"> カブホーンN(HP+250)
+		<option value="54"> コンドルジオグラフN(エアシューズ)
+		<option value="55"> クロッカーN(HP+250)
+		<option value="56"> フラッターN(ウッド+10)
+		<option value="57"> ドラゴンスカイN(ウッドG.A+)
+		<option value="58"> リリッシュN(Cスプレッド)
+		<option value="59">ウリンガN(HP+250)
+		<option value="5A"> ヌッキーN(カワリミ)
+		<option value="5B"> エランドN(Sディバイド)
+		<option value="5C"> オヒュカスクイーンN(HP+400)
+		<option value="5D"> シュリマルN(Cシュリケン)
+		<option value="5E"> キグナスウィングN(フロートシューズ)
+		<option value="5F"> グレイブジョーカーN(ボディパック)
+		<option value="60"> アンドロメダN(マックスバスター)
+		<option value="61">アシッドエースN(オートロックオン)
+		<option value="62"> ラ・ムーN(Sインビジブル)
+		<option value="63"> クリムゾンドラゴンN(HP+500)
+
+</select>
+
+	</td>
+	<td>
+		ノイズドカード02:
+		<select name=nkg_02>
+		<option value="64"> なし
+		<option value="01"> モアイアンN(ブレイク+10)
+		<option value="00"> レオキングダムN(ファイアG.A+)
+		<option value="02"> オックスファイアN(スーパーアーマー)
+		<option value="03"> ハンマリーN(HP+250)
+		<option value="05"> アカシーサーN(Sアタックパネル)
+		<option value="04"> メラマンダN(ファイア+10)
+		<option value="06"> デスカウントN(フラッシュボディ)
+		<option value="07"> ストンゴN(Cヘビードーン)
+		<option value="08"> メットリオN(リフレクト)
+		<option value="09"> ボボンN(Sボムライザー)
+		<option value="0A"> ジャックコーヴァスN(ファイア+20)
+		<option value="0B"> モエローダーN(HP+150)
+		<option value="0C"> オロロンN(HP+200)
+		<option value="0D"> フレイマーN(CMフレイム)
+		<option value="0E"> ダバダンスN(Sアタック+10)
+		<option value="0F"> シリウスN(ブレイク+20)
+		<option value="10">ドッカーンN(ファイア+10)
+		<option value="11"> リブラバランスN(HP+400)
+		<option value="12"> エドレードN(ソード+10)
+		<option value="13"> ウォーロックコピーN(Sダブルイーター)
+		<option value="14"> イワガンコN(C+)
+		<option value="15"> ハープノートN(ノーマルG.A+)
+		<option value="16"> ヘルブラックN(+ポイズンパネル)
+		<option value="17"> アポロンフレイムN(ファーストオーラ)
+		<option value="18"> ラビジェットN(+アイスパネル)
+		<option value="19"> キルシャークN(アクア+10)
+		<option value="1A"> オリガジェネラルN(Sホイッスル)
+		<option value="1B"> ホイルズN(Cギザホイール)
+		<option value="1C"> スノーゴロンN(ファーストバリア)
+		<option value="1D"> ダイヤアイスバーンN(アクア+20)
+		<option value="1E"> オクタリンN(Sブラックインク)
+		<option value="1F"> ピラニッシュN(HP+250)
+		<option value="20"> ネバーラN(グラビティボディ)
+		<option value="21"> シシカシューN(プラスパニック)
+		<option value="22"> ペガサスマジックN(アクアG.A+)
+		<option value="23"> プルミンN(アクア+10)
+		<option value="24"> サワニガーN(Sアイス)
+		<option value="25"> ペンキラーN(CIスピニング)
+		<option value="26"> ジャンクネスN(ブレイク+10)
+		<option value="27"> ジャミンガーN(HP+250)
+		<option value="28"> イエティブリザードN(フリーズボディ)
+		<option value="29">アロスカルN(プラスグラビティ)
+		<option value="2A"> ヒールウィザードN(+Pパネル)
+		<option value="2B"> キャノベースN(HP+150)
+		<option value="2C"> ブラキオウェーブN(Sマヒプラス)
+		<option value="2D"> クイーンヴァルゴN(メガクラス+1)
+		<option value="2E"> ニョロフーンN(HP+250)
+		<option value="2F"> キャンサーバブルN(バブルボディ)
+		<option value="30"> イナドランN(サンダー+10)
+		<option value="31"> ムーンディザスターN(HP+300)
+		<option value="32"> ゴロボルタN(SPクラウド)
+		<option value="33"> アイズN(プラスインビジ)
+		<option value="34"> キルミィN(HP+200)
+		<option value="35"> ファントムブラックN(アンダーシャツ)
+		<option value="36"> エレミーラN(HP+150)
+		<option value="37"> ノイズドウィザードN(+ゼツエンパネル)
+		<option value="38"> バルカナN(Cマッドバルカン)
+		<option value="39"> ビグリッパN(HP+250)
+		<option value="3A"> ナイナイN(プラスブラインド)
+		<option value="3B"> ブライN(ソード+20)
+		<option value="3C"> バサリカN(HP+200
+		<option value="3D"> ベルゴングN(HP+150)
+		<option value="3E"> マイリーN(HP+150)
+		<option value="3F"> スピアードN(CFスピア)
+		<option value="40"> クラウンサンダーN(SパラライズS)
+		<option value="41"> ホタローN(サンダー+10)
+		<option value="42"> ビリーエースN(プラスパラライズ)
+		<option value="43"> エンプティーN(パラライズボディ)
+		<option value="44"> スペードマグネッツN(サンダー+20)
+		<option value="45"> ステルスN(HP+150)
+		<option value="46"> マジョネールN(カードリカバリー)
+		<option value="47"> ジェミニスパークN(サンダーG.A+)
+		<option value="48"> ムーキューブN(CMテクノロジー)
+		<option value="49"> モジャヘイN(ウッド+10)
+		<option value="4A"> ウルフフォレストN(HP+400)
+		<option value="4B"> モノソードN(ソード+10)
+		<option value="4C"> コガラシマルN(プラスウィンド)
+		<option value="4D"> パウダリーフN(+グリーンパネル)
+		<option value="4E"> ゴートカンフーN(クイックゲージ)
+		<option value="4F"> クラブストロングN(ウッド+20)
+		<option value="50"> カカペットN(Sクサムラ)
+		<option value="51"> パサランN(Sリカバリー30)
+		<option value="52"> スパイダラN(HP+250)
+		<option value="53"> カブホーンN(HP+250)
+		<option value="54"> コンドルジオグラフN(エアシューズ)
+		<option value="55"> クロッカーN(HP+250)
+		<option value="56"> フラッターN(ウッド+10)
+		<option value="57"> ドラゴンスカイN(ウッドG.A+)
+		<option value="58"> リリッシュN(Cスプレッド)
+		<option value="59">ウリンガN(HP+250)
+		<option value="5A"> ヌッキーN(カワリミ)
+		<option value="5B"> エランドN(Sディバイド)
+		<option value="5C"> オヒュカスクイーンN(HP+400)
+		<option value="5D"> シュリマルN(Cシュリケン)
+		<option value="5E"> キグナスウィングN(フロートシューズ)
+		<option value="5F"> グレイブジョーカーN(ボディパック)
+		<option value="60"> アンドロメダN(マックスバスター)
+		<option value="61">アシッドエースN(オートロックオン)
+		<option value="62"> ラ・ムーN(Sインビジブル)
+		<option value="63"> クリムゾンドラゴンN(HP+500)
+
+</select>
+	</td>
+	<td>
+		ノイズドカード03:
+		<select name=nkg_03>
+		<option value="64"> なし
+		<option value="01"> モアイアンN(ブレイク+10)
+		<option value="00"> レオキングダムN(ファイアG.A+)
+		<option value="02"> オックスファイアN(スーパーアーマー)
+		<option value="03"> ハンマリーN(HP+250)
+		<option value="05"> アカシーサーN(Sアタックパネル)
+		<option value="04"> メラマンダN(ファイア+10)
+		<option value="06"> デスカウントN(フラッシュボディ)
+		<option value="07"> ストンゴN(Cヘビードーン)
+		<option value="08"> メットリオN(リフレクト)
+		<option value="09"> ボボンN(Sボムライザー)
+		<option value="0A"> ジャックコーヴァスN(ファイア+20)
+		<option value="0B"> モエローダーN(HP+150)
+		<option value="0C"> オロロンN(HP+200)
+		<option value="0D"> フレイマーN(CMフレイム)
+		<option value="0E"> ダバダンスN(Sアタック+10)
+		<option value="0F"> シリウスN(ブレイク+20)
+		<option value="10">ドッカーンN(ファイア+10)
+		<option value="11"> リブラバランスN(HP+400)
+		<option value="12"> エドレードN(ソード+10)
+		<option value="13"> ウォーロックコピーN(Sダブルイーター)
+		<option value="14"> イワガンコN(C+)
+		<option value="15"> ハープノートN(ノーマルG.A+)
+		<option value="16"> ヘルブラックN(+ポイズンパネル)
+		<option value="17"> アポロンフレイムN(ファーストオーラ)
+		<option value="18"> ラビジェットN(+アイスパネル)
+		<option value="19"> キルシャークN(アクア+10)
+		<option value="1A"> オリガジェネラルN(Sホイッスル)
+		<option value="1B"> ホイルズN(Cギザホイール)
+		<option value="1C"> スノーゴロンN(ファーストバリア)
+		<option value="1D"> ダイヤアイスバーンN(アクア+20)
+		<option value="1E"> オクタリンN(Sブラックインク)
+		<option value="1F"> ピラニッシュN(HP+250)
+		<option value="20"> ネバーラN(グラビティボディ)
+		<option value="21"> シシカシューN(プラスパニック)
+		<option value="22"> ペガサスマジックN(アクアG.A+)
+		<option value="23"> プルミンN(アクア+10)
+		<option value="24"> サワニガーN(Sアイス)
+		<option value="25"> ペンキラーN(CIスピニング)
+		<option value="26"> ジャンクネスN(ブレイク+10)
+		<option value="27"> ジャミンガーN(HP+250)
+		<option value="28"> イエティブリザードN(フリーズボディ)
+		<option value="29">アロスカルN(プラスグラビティ)
+		<option value="2A"> ヒールウィザードN(+Pパネル)
+		<option value="2B"> キャノベースN(HP+150)
+		<option value="2C"> ブラキオウェーブN(Sマヒプラス)
+		<option value="2D"> クイーンヴァルゴN(メガクラス+1)
+		<option value="2E"> ニョロフーンN(HP+250)
+		<option value="2F"> キャンサーバブルN(バブルボディ)
+		<option value="30"> イナドランN(サンダー+10)
+		<option value="31"> ムーンディザスターN(HP+300)
+		<option value="32"> ゴロボルタN(SPクラウド)
+		<option value="33"> アイズN(プラスインビジ)
+		<option value="34"> キルミィN(HP+200)
+		<option value="35"> ファントムブラックN(アンダーシャツ)
+		<option value="36"> エレミーラN(HP+150)
+		<option value="37"> ノイズドウィザードN(+ゼツエンパネル)
+		<option value="38"> バルカナN(Cマッドバルカン)
+		<option value="39"> ビグリッパN(HP+250)
+		<option value="3A"> ナイナイN(プラスブラインド)
+		<option value="3B"> ブライN(ソード+20)
+		<option value="3C"> バサリカN(HP+200
+		<option value="3D"> ベルゴングN(HP+150)
+		<option value="3E"> マイリーN(HP+150)
+		<option value="3F"> スピアードN(CFスピア)
+		<option value="40"> クラウンサンダーN(SパラライズS)
+		<option value="41"> ホタローN(サンダー+10)
+		<option value="42"> ビリーエースN(プラスパラライズ)
+		<option value="43"> エンプティーN(パラライズボディ)
+		<option value="44"> スペードマグネッツN(サンダー+20)
+		<option value="45"> ステルスN(HP+150)
+		<option value="46"> マジョネールN(カードリカバリー)
+		<option value="47"> ジェミニスパークN(サンダーG.A+)
+		<option value="48"> ムーキューブN(CMテクノロジー)
+		<option value="49"> モジャヘイN(ウッド+10)
+		<option value="4A"> ウルフフォレストN(HP+400)
+		<option value="4B"> モノソードN(ソード+10)
+		<option value="4C"> コガラシマルN(プラスウィンド)
+		<option value="4D"> パウダリーフN(+グリーンパネル)
+		<option value="4E"> ゴートカンフーN(クイックゲージ)
+		<option value="4F"> クラブストロングN(ウッド+20)
+		<option value="50"> カカペットN(Sクサムラ)
+		<option value="51"> パサランN(Sリカバリー30)
+		<option value="52"> スパイダラN(HP+250)
+		<option value="53"> カブホーンN(HP+250)
+		<option value="54"> コンドルジオグラフN(エアシューズ)
+		<option value="55"> クロッカーN(HP+250)
+		<option value="56"> フラッターN(ウッド+10)
+		<option value="57"> ドラゴンスカイN(ウッドG.A+)
+		<option value="58"> リリッシュN(Cスプレッド)
+		<option value="59">ウリンガN(HP+250)
+		<option value="5A"> ヌッキーN(カワリミ)
+		<option value="5B"> エランドN(Sディバイド)
+		<option value="5C"> オヒュカスクイーンN(HP+400)
+		<option value="5D"> シュリマルN(Cシュリケン)
+		<option value="5E"> キグナスウィングN(フロートシューズ)
+		<option value="5F"> グレイブジョーカーN(ボディパック)
+		<option value="60"> アンドロメダN(マックスバスター)
+		<option value="61">アシッドエースN(オートロックオン)
+		<option value="62"> ラ・ムーN(Sインビジブル)
+		<option value="63"> クリムゾンドラゴンN(HP+500)
+
+</select>
+	</td>
+	<td>
+		ノイズドカード04:
+		<select name=nkg_04>
+		<option value="64"> なし
+		<option value="01"> モアイアンN(ブレイク+10)
+		<option value="00"> レオキングダムN(ファイアG.A+)
+		<option value="02"> オックスファイアN(スーパーアーマー)
+		<option value="03"> ハンマリーN(HP+250)
+		<option value="05"> アカシーサーN(Sアタックパネル)
+		<option value="04"> メラマンダN(ファイア+10)
+		<option value="06"> デスカウントN(フラッシュボディ)
+		<option value="07"> ストンゴN(Cヘビードーン)
+		<option value="08"> メットリオN(リフレクト)
+		<option value="09"> ボボンN(Sボムライザー)
+		<option value="0A"> ジャックコーヴァスN(ファイア+20)
+		<option value="0B"> モエローダーN(HP+150)
+		<option value="0C"> オロロンN(HP+200)
+		<option value="0D"> フレイマーN(CMフレイム)
+		<option value="0E"> ダバダンスN(Sアタック+10)
+		<option value="0F"> シリウスN(ブレイク+20)
+		<option value="10">ドッカーンN(ファイア+10)
+		<option value="11"> リブラバランスN(HP+400)
+		<option value="12"> エドレードN(ソード+10)
+		<option value="13"> ウォーロックコピーN(Sダブルイーター)
+		<option value="14"> イワガンコN(C+)
+		<option value="15"> ハープノートN(ノーマルG.A+)
+		<option value="16"> ヘルブラックN(+ポイズンパネル)
+		<option value="17"> アポロンフレイムN(ファーストオーラ)
+		<option value="18"> ラビジェットN(+アイスパネル)
+		<option value="19"> キルシャークN(アクア+10)
+		<option value="1A"> オリガジェネラルN(Sホイッスル)
+		<option value="1B"> ホイルズN(Cギザホイール)
+		<option value="1C"> スノーゴロンN(ファーストバリア)
+		<option value="1D"> ダイヤアイスバーンN(アクア+20)
+		<option value="1E"> オクタリンN(Sブラックインク)
+		<option value="1F"> ピラニッシュN(HP+250)
+		<option value="20"> ネバーラN(グラビティボディ)
+		<option value="21"> シシカシューN(プラスパニック)
+		<option value="22"> ペガサスマジックN(アクアG.A+)
+		<option value="23"> プルミンN(アクア+10)
+		<option value="24"> サワニガーN(Sアイス)
+		<option value="25"> ペンキラーN(CIスピニング)
+		<option value="26"> ジャンクネスN(ブレイク+10)
+		<option value="27"> ジャミンガーN(HP+250)
+		<option value="28"> イエティブリザードN(フリーズボディ)
+		<option value="29">アロスカルN(プラスグラビティ)
+		<option value="2A"> ヒールウィザードN(+Pパネル)
+		<option value="2B"> キャノベースN(HP+150)
+		<option value="2C"> ブラキオウェーブN(Sマヒプラス)
+		<option value="2D"> クイーンヴァルゴN(メガクラス+1)
+		<option value="2E"> ニョロフーンN(HP+250)
+		<option value="2F"> キャンサーバブルN(バブルボディ)
+		<option value="30"> イナドランN(サンダー+10)
+		<option value="31"> ムーンディザスターN(HP+300)
+		<option value="32"> ゴロボルタN(SPクラウド)
+		<option value="33"> アイズN(プラスインビジ)
+		<option value="34"> キルミィN(HP+200)
+		<option value="35"> ファントムブラックN(アンダーシャツ)
+		<option value="36"> エレミーラN(HP+150)
+		<option value="37"> ノイズドウィザードN(+ゼツエンパネル)
+		<option value="38"> バルカナN(Cマッドバルカン)
+		<option value="39"> ビグリッパN(HP+250)
+		<option value="3A"> ナイナイN(プラスブラインド)
+		<option value="3B"> ブライN(ソード+20)
+		<option value="3C"> バサリカN(HP+200
+		<option value="3D"> ベルゴングN(HP+150)
+		<option value="3E"> マイリーN(HP+150)
+		<option value="3F"> スピアードN(CFスピア)
+		<option value="40"> クラウンサンダーN(SパラライズS)
+		<option value="41"> ホタローN(サンダー+10)
+		<option value="42"> ビリーエースN(プラスパラライズ)
+		<option value="43"> エンプティーN(パラライズボディ)
+		<option value="44"> スペードマグネッツN(サンダー+20)
+		<option value="45"> ステルスN(HP+150)
+		<option value="46"> マジョネールN(カードリカバリー)
+		<option value="47"> ジェミニスパークN(サンダーG.A+)
+		<option value="48"> ムーキューブN(CMテクノロジー)
+		<option value="49"> モジャヘイN(ウッド+10)
+		<option value="4A"> ウルフフォレストN(HP+400)
+		<option value="4B"> モノソードN(ソード+10)
+		<option value="4C"> コガラシマルN(プラスウィンド)
+		<option value="4D"> パウダリーフN(+グリーンパネル)
+		<option value="4E"> ゴートカンフーN(クイックゲージ)
+		<option value="4F"> クラブストロングN(ウッド+20)
+		<option value="50"> カカペットN(Sクサムラ)
+		<option value="51"> パサランN(Sリカバリー30)
+		<option value="52"> スパイダラN(HP+250)
+		<option value="53"> カブホーンN(HP+250)
+		<option value="54"> コンドルジオグラフN(エアシューズ)
+		<option value="55"> クロッカーN(HP+250)
+		<option value="56"> フラッターN(ウッド+10)
+		<option value="57"> ドラゴンスカイN(ウッドG.A+)
+		<option value="58"> リリッシュN(Cスプレッド)
+		<option value="59">ウリンガN(HP+250)
+		<option value="5A"> ヌッキーN(カワリミ)
+		<option value="5B"> エランドN(Sディバイド)
+		<option value="5C"> オヒュカスクイーンN(HP+400)
+		<option value="5D"> シュリマルN(Cシュリケン)
+		<option value="5E"> キグナスウィングN(フロートシューズ)
+		<option value="5F"> グレイブジョーカーN(ボディパック)
+		<option value="60"> アンドロメダN(マックスバスター)
+		<option value="61">アシッドエースN(オートロックオン)
+		<option value="62"> ラ・ムーN(Sインビジブル)
+		<option value="63"> クリムゾンドラゴンN(HP+500)
+
+</select>
+	</td>
+	<td>
+		ノイズドカード05:
+		<select name=nkg_05>
+		<option value="64"> なし
+		<option value="01"> モアイアンN(ブレイク+10)
+		<option value="00"> レオキングダムN(ファイアG.A+)
+		<option value="02"> オックスファイアN(スーパーアーマー)
+		<option value="03"> ハンマリーN(HP+250)
+		<option value="05"> アカシーサーN(Sアタックパネル)
+		<option value="04"> メラマンダN(ファイア+10)
+		<option value="06"> デスカウントN(フラッシュボディ)
+		<option value="07"> ストンゴN(Cヘビードーン)
+		<option value="08"> メットリオN(リフレクト)
+		<option value="09"> ボボンN(Sボムライザー)
+		<option value="0A"> ジャックコーヴァスN(ファイア+20)
+		<option value="0B"> モエローダーN(HP+150)
+		<option value="0C"> オロロンN(HP+200)
+		<option value="0D"> フレイマーN(CMフレイム)
+		<option value="0E"> ダバダンスN(Sアタック+10)
+		<option value="0F"> シリウスN(ブレイク+20)
+		<option value="10">ドッカーンN(ファイア+10)
+		<option value="11"> リブラバランスN(HP+400)
+		<option value="12"> エドレードN(ソード+10)
+		<option value="13"> ウォーロックコピーN(Sダブルイーター)
+		<option value="14"> イワガンコN(C+)
+		<option value="15"> ハープノートN(ノーマルG.A+)
+		<option value="16"> ヘルブラックN(+ポイズンパネル)
+		<option value="17"> アポロンフレイムN(ファーストオーラ)
+		<option value="18"> ラビジェットN(+アイスパネル)
+		<option value="19"> キルシャークN(アクア+10)
+		<option value="1A"> オリガジェネラルN(Sホイッスル)
+		<option value="1B"> ホイルズN(Cギザホイール)
+		<option value="1C"> スノーゴロンN(ファーストバリア)
+		<option value="1D"> ダイヤアイスバーンN(アクア+20)
+		<option value="1E"> オクタリンN(Sブラックインク)
+		<option value="1F"> ピラニッシュN(HP+250)
+		<option value="20"> ネバーラN(グラビティボディ)
+		<option value="21"> シシカシューN(プラスパニック)
+		<option value="22"> ペガサスマジックN(アクアG.A+)
+		<option value="23"> プルミンN(アクア+10)
+		<option value="24"> サワニガーN(Sアイス)
+		<option value="25"> ペンキラーN(CIスピニング)
+		<option value="26"> ジャンクネスN(ブレイク+10)
+		<option value="27"> ジャミンガーN(HP+250)
+		<option value="28"> イエティブリザードN(フリーズボディ)
+		<option value="29">アロスカルN(プラスグラビティ)
+		<option value="2A"> ヒールウィザードN(+Pパネル)
+		<option value="2B"> キャノベースN(HP+150)
+		<option value="2C"> ブラキオウェーブN(Sマヒプラス)
+		<option value="2D"> クイーンヴァルゴN(メガクラス+1)
+		<option value="2E"> ニョロフーンN(HP+250)
+		<option value="2F"> キャンサーバブルN(バブルボディ)
+		<option value="30"> イナドランN(サンダー+10)
+		<option value="31"> ムーンディザスターN(HP+300)
+		<option value="32"> ゴロボルタN(SPクラウド)
+		<option value="33"> アイズN(プラスインビジ)
+		<option value="34"> キルミィN(HP+200)
+		<option value="35"> ファントムブラックN(アンダーシャツ)
+		<option value="36"> エレミーラN(HP+150)
+		<option value="37"> ノイズドウィザードN(+ゼツエンパネル)
+		<option value="38"> バルカナN(Cマッドバルカン)
+		<option value="39"> ビグリッパN(HP+250)
+		<option value="3A"> ナイナイN(プラスブラインド)
+		<option value="3B"> ブライN(ソード+20)
+		<option value="3C"> バサリカN(HP+200
+		<option value="3D"> ベルゴングN(HP+150)
+		<option value="3E"> マイリーN(HP+150)
+		<option value="3F"> スピアードN(CFスピア)
+		<option value="40"> クラウンサンダーN(SパラライズS)
+		<option value="41"> ホタローN(サンダー+10)
+		<option value="42"> ビリーエースN(プラスパラライズ)
+		<option value="43"> エンプティーN(パラライズボディ)
+		<option value="44"> スペードマグネッツN(サンダー+20)
+		<option value="45"> ステルスN(HP+150)
+		<option value="46"> マジョネールN(カードリカバリー)
+		<option value="47"> ジェミニスパークN(サンダーG.A+)
+		<option value="48"> ムーキューブN(CMテクノロジー)
+		<option value="49"> モジャヘイN(ウッド+10)
+		<option value="4A"> ウルフフォレストN(HP+400)
+		<option value="4B"> モノソードN(ソード+10)
+		<option value="4C"> コガラシマルN(プラスウィンド)
+		<option value="4D"> パウダリーフN(+グリーンパネル)
+		<option value="4E"> ゴートカンフーN(クイックゲージ)
+		<option value="4F"> クラブストロングN(ウッド+20)
+		<option value="50"> カカペットN(Sクサムラ)
+		<option value="51"> パサランN(Sリカバリー30)
+		<option value="52"> スパイダラN(HP+250)
+		<option value="53"> カブホーンN(HP+250)
+		<option value="54"> コンドルジオグラフN(エアシューズ)
+		<option value="55"> クロッカーN(HP+250)
+		<option value="56"> フラッターN(ウッド+10)
+		<option value="57"> ドラゴンスカイN(ウッドG.A+)
+		<option value="58"> リリッシュN(Cスプレッド)
+		<option value="59">ウリンガN(HP+250)
+		<option value="5A"> ヌッキーN(カワリミ)
+		<option value="5B"> エランドN(Sディバイド)
+		<option value="5C"> オヒュカスクイーンN(HP+400)
+		<option value="5D"> シュリマルN(Cシュリケン)
+		<option value="5E"> キグナスウィングN(フロートシューズ)
+		<option value="5F"> グレイブジョーカーN(ボディパック)
+		<option value="60"> アンドロメダN(マックスバスター)
+		<option value="61">アシッドエースN(オートロックオン)
+		<option value="62"> ラ・ムーN(Sインビジブル)
+		<option value="63"> クリムゾンドラゴンN(HP+500)
+
+</select>
+	</td>
+</tr>
+
+
+
+											<td colspan="5"><input type="button" value="コード出力" name="gen" onclick= "generate()">
+											<input type="reset" value="リセット">
+
+											<br>
+											<textarea cols="40" rows="16" name="ans"></textarea></td>
+</tr>
+										</form>
+
+
+
+									<script type="text/javascript">
+									function generate(){
+											//ノイズチェンジ
+											valc1 = document.indv.noize.value;
+											//レゾンチェンジ
+											valc2 = document.indv.rezon.value;
+											//ホワイトチェンジ
+											valc3 = document.indv.whitecard.value;
+											//ノイズカードチェンジ
+											valc4 = document.indv.nkg_01.value;
+											valc5 = document.indv.nkg_02.value;
+											valc6 = document.indv.nkg_03.value;
+											valc7 = document.indv.nkg_04.value;
+											valc8 = document.indv.nkg_05.value;
+											//レゾンフラグ
+
+
+
+
+
+
+
+
+
+											document.indv.ans.value
+																	= "220F39C0 000000" + valc1 + "\n"
+																  + "220F39BE 000000" + valc2 + "\n"
+																	+ "220F39C1 000000" + valc3 + "\n"
+																	+ "220FA114 000000" + valc4 + "\n"
+																	+ "220FA116 000000" + valc5 + "\n"
+																	+ "220FA118 000000" + valc6 + "\n"
+																	+ "220FA11A 000000" + valc7 + "\n"
+																	+ "220FA11C 000000" + valc8 + "\n"
+
+
+
+
+
+
+
+											}
+
+
+									</script>
+										</table>
+
+											<table name="indv_discrption" border="1">
+												<tr><td>
+												レゾンンフラグon<br>220F9EDE 00000001  </td></tr>
+
+											</table>
+
+
+
+
+
+
+
+
+
+
+						制作者：Thistel<br>
+	                	公開日：2019/09/17 ~<br>
+	                	なにかご質問 不具合があればこちらに↓<br>
+	                	twitter<a href="https://twitter.com/_X__XD_pad">@_X__XD_pad</a>
+	                	</div>
+	</body>
+	</html>
