@@ -1747,6 +1747,7 @@
         <td colspan="5">
           <input type="button" value="generate" name="gen" onclick="generate()" />
           <input type="reset" value="reset" />
+          <input type="button" value="Copy Top Left Settings to All" name="copy_all" onclick="copyFromTopLeft()" />
 
           <br />
           <textarea cols="30" rows="16" name="ans"></textarea>
@@ -1754,6 +1755,50 @@
       </form>
 
       <script type="text/javascript">
+        function copyFromTopLeft() {
+          // Get settings from top left
+          const noize = document.bro_set.noize_top_left.value;
+          const rezon = document.bro_set.rezon_top_left.value;
+          const whitecard = document.bro_set.whitecard_top_left.value;
+          const giga = document.bro_set.giga_top_left.value;
+          const mega = document.bro_set.mega_top_left.value;
+          
+          // Copy to middle left
+          document.bro_set.noize_mid_left.value = noize;
+          document.bro_set.rezon_mid_left.value = rezon;
+          document.bro_set.whitecard_mid_left.value = whitecard;
+          document.bro_set.giga_mid_left.value = giga;
+          document.bro_set.mega_mid_left.value = mega;
+          
+          // Copy to bottom left
+          document.bro_set.noize_btm_left.value = noize;
+          document.bro_set.rezon_btm_left.value = rezon;
+          document.bro_set.whitecard_btm_left.value = whitecard;
+          document.bro_set.giga_btm_left.value = giga;
+          document.bro_set.mega_btm_left.value = mega;
+          
+          // Copy to top right
+          document.bro_set.noize_top_right.value = noize;
+          document.bro_set.rezon_top_right.value = rezon;
+          document.bro_set.whitecard_top_right.value = whitecard;
+          document.bro_set.giga_top_right.value = giga;
+          document.bro_set.mega_top_right.value = mega;
+          
+          // Copy to middle right
+          document.bro_set.noize_mid_right.value = noize;
+          document.bro_set.rezon_mid_right.value = rezon;
+          document.bro_set.whitecard_mid_right.value = whitecard;
+          document.bro_set.giga_mid_right.value = giga;
+          document.bro_set.mega_mid_right.value = mega;
+          
+          // Copy to bottom right
+          document.bro_set.noize_btm_right.value = noize;
+          document.bro_set.rezon_btm_right.value = rezon;
+          document.bro_set.whitecard_btm_right.value = whitecard;
+          document.bro_set.giga_btm_right.value = giga;
+          document.bro_set.mega_btm_right.value = mega;
+        }
+        
         function generate() {
           //top left
           //ノイズ
