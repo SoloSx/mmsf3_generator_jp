@@ -1,802 +1,838 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="author" content="Thiste">
-<meta name="viewpoint" content="user-scalable">
-<meta name="description" content="流星のロックマン3ブラックエース、レッドジョーカーのチートコードの生成をするジェネレーターです"/>
-<meta name="keyword" content="流星のロックマン,流星ロックマン3,BA,RJ,改造,チート,PAR,チート,チートコード"/>
-<title> MMSF3 流星のロックマン3 チートコードジェネレーター</title>
-<link rel="stylesheet" href="mmsf3.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Thiste" />
+    <meta name="viewpoint" content="user-scalable" />
+    <meta
+      name="description"
+      content="流星のロックマン3ブラックエース、レッドジョーカーのチートコードの生成をするジェネレーターです"
+    />
+    <meta
+      name="keyword"
+      content="流星のロックマン,流星ロックマン3,BA,RJ,改造,チート,PAR,チート,チートコード"
+    />
+    <title>MMSF3 流星のロックマン3 チートコードジェネレーター</title>
+    <link rel="stylesheet" href="mmsf3.css" />
+  </head>
+  <body>
+    <div id="titie-text" class="explanation">
+      <div class="shrt-sentence">
+        <h1 class="h3">MMSF3 ARcode genetator Based on JPRom</h1>
+        <p>Attention※※If you used this generetor at your own risk thanks Thistle※※</p>
+        <text></text>
+      </div>
+    </div>
 
+    <div class="sidebar">
+      <h2 class="setting">Various of settings</h2>
+      <ul class="setting-column">
+        <li class="rj_indv">
+          <a href="mmsf_indv_set_en_rj.html" class="setting-link">Mega man SF setting Ver.RJ</a>
+        </li>
+        <li class="rj_bro">
+          <a href="mmsf_bro_set_en_rj.html" class="setting-link">Brother setting Ver.RJ</a>
+        </li>
+        <li class="ba_indv">
+          <a href="mmsf_indv_set_en_ba.html" class="setting-link">Mega man SF setting Ver.BA</a>
+        </li>
+        <li class="ba_bro">
+          <a href="mmsf_bro_set_en_ba.html" class="setting-link">Brother setting Ver.BA</a>
+        </li>
+        <li class="readme">
+          <a href="index.html" class="setting-link">Readme</a>
+        </li>
+      </ul>
+    </div>
 
+    <div class="setting-table">
+      <div class="table-body">
+        <h2>Megaman setting(NKG、whitecard、Purpose / Rezon Card、Noize Change) Ver.BA</h2>
+      </div>
+      <table border="1">
+        <form name="indv">
+          <tr>
+            <td>
+              Noize：
+              <select name="noize">
+                <option value="00">No noize</option>
+                <option value="01">Libra</option>
+                <option value="02">Corvus</option>
+                <option value="03">Cancer</option>
+                <option value="04">Gemini</option>
+                <option value="05">Ophiuca</option>
+                <option value="06">Cygnus</option>
+                <option value="07">Taurus</option>
+                <option value="08">Virgo</option>
+                <option value="09">Crown</option>
+                <option value="0A">Wolf</option>
+                <option value="0B">Rogue</option>
+              </select>
+            </td>
 
+            <td>
+              Purpose / Rezon Card：
+              <select name="rezon">
+                <option value="00">Battle</option>
+                <option value="01">Fire</option>
+                <option value="02">Aqua</option>
+                <option value="03">Thunder</option>
+                <option value="04">Wood</option>
+                <option value="05">Sword</option>
+                <option value="06">Break</option>
+                <option value="07">Guard</option>
+                <option value="08">Paralyze</option>
+                <option value="09">Finalize</option>
+              </select>
+            </td>
 
+            <td colspan="4">
+              White Card:
+              <select name="whitecard">
+                <option value="00">none</option>
+                <option value="01">plasma gun, Plasma gun, Air Spread 1, Beast Slap 1</option>
+                <option value="02">Wide Sword, Recover+30, GrandWave, Barrier</option>
+                <option value="03">Mad Vulcan 1, Mini Grenade, Long sword, Canon</option>
+                <option value="04">Plasma gun, invis, grand wave 1, beast slap 1</option>
+                <option value="05">Divide line, long sword, mad vulcan 1, recover+30</option>
+                <option value="06">Invis, grand wave 1, sword, mad vulcan 1</option>
+                <option value="07">Beast slap 1, canon, plasma gun, gravity plus</option>
+                <option value="08">Mini grenade, long sword, long sword, recover+30</option>
+                <option value="0A">air spread 1, machine gun 1, beast slap 1, air spread 1</option>
+                <option value="0B">
+                  flash strike 1, flash strike 1, machine gun 1, gravity plus
+                </option>
+                <option value="0C">beast slap 1, beast slap 1, air spread 1, attack+10</option>
+                <option value="0D">grand wave 1, machine gun 1, attack+10, beast slap 1</option>
+                <option value="0E">air spread 2, wide wave 1, gravity plus, divide line</option>
+                <option value="0F">jet attack 1, jet attack 1, gravity plus, recover+50</option>
+                <option value="10">Drill arm 1, drill arm 1, attack+10, jet attack 1</option>
+                <option value="11">wide wave 1, shark attack 1, shark attack 1, wide wave 1</option>
+                <option value="12">Grand wave 2, buzz saw 1, buzz saw 1, paralyze plus</option>
+                <option value="13">Ice spin 1, attack+10, wide wave 1, wide wave 1</option>
+                <option value="14">
+                  shark attack 1, paralyze plus, gravity plus, shark attack 1
+                </option>
+                <option value="15">air spread 3, plus cannon, buzz saw 2, buzz saw 2</option>
+                <option value="16">bushido 1, bushido 1, buzz saw 2, paralyze plus</option>
+                <option value="17">bubble hook 1, wide wave 2, paralyze plus, bubble hook 1</option>
+                <option value="18">beast slap 2, beast slap 2, drill arm 1, plus cannon</option>
+                <option value="19">mad fire 1, mad fire 1, heat upper 2, heat upper 2</option>
+                <option value="1A">time bomb 1, heat upper 2, mad fire 1, attack+10</option>
+                <option value="1B">pollon shot 1, shuriken 2, acorn bomb 1, arach attack 1</option>
+                <option value="1C">acorn bomb 1, acorn bomb 1, pollon shot 1, pollon shot 1</option>
+                <option value="1D">
+                  flash strike 3, flash strike 3, stealth lazer 2, thunder head 1
+                </option>
+                <option value="1E">
+                  stealth lazer 2, paralyze plus, thunder head 1, mummy hand 1
+                </option>
+                <option value="1F">drill arm 3, buki 1, heavy cannon, typhoon dance</option>
+                <option value="20">time bomb 2, mech flame 1, heat upper 3, mad fire 2</option>
+                <option value="21">beast slap 3, beast slap 2, double eater, great axe</option>
+                <option value="22">wide wave 3, shark attack 3, wide wave 2, shark attack 3</option>
+                <option value="23">time bomb 2, heat upper 3, mad fire 3, attack panel</option>
+                <option value="24">pollon shot 3, shuriken 2, acorn bomb 3, arach attack 3</option>
+                <option value="25">
+                  flash strike 3, thunder head 2, flash strike 3, stealth lazer 2
+                </option>
+                <option value="26">drill arm 3, drill arm 2, paralyze plus, buki 3</option>
+                <option value="27">
+                  stealth lazer 3, paralyze plus, thunder head 2, mummy hand 3
+                </option>
+                <option value="28">mech flame 2, heat upper 3, time bomb 3, mad fire 3</option>
+                <option value="29">bubble hook 3, bubble hook 3, paralyze plus, wide wave 3</option>
+                <option value="2A">shuriken 3, arach attack 3, acorn bomb 3, wood slash</option>
+                <option value="2B">
+                  flash strike 3, stealth lazer 3, thunder head 3, elec slash
+                </option>
+                <option value="2C">tornado dance, windy attack 3, drill arm 3, buki 3</option>
+                <option value="2D">
+                  plasma gun, stealth lazer 2, mummy hand 2, thunder head 1
+                </option>
+                <option value="2E">green ink, arach attack 1, shuriken 1, pollon shot 2</option>
+                <option value="2F">whistle, drill arm 1, drill arm 2, windy attack 1</option>
+                <option value="30">
+                  bubble hook 1, bubble hook 1, flash strike 2, thunder head 2
+                </option>
+                <option value="31">black ink, flash strike 2, bubble hook 1, mummy hand 2</option>
+                <option value="32">
+                  windy attack 1, windy attack 1, noise wizard 1, noise wizard 2
+                </option>
+                <option value="33">buzz saw 2, grand wave 2, shuriken 1, ice spin 1</option>
+                <option value="34">heavy cannon, drill arm 2, heat upper 2, big drop 1</option>
+                <option value="35">Mal wizard 1, bubble hook 1, elec slash, arach attack 1</option>
+                <option value="36">barrier, cannon, cannon, cannon</option>
+                <option value="37">double eater, whistle, beast slap 3, great axe</option>
+                <option value="38">acorn bomb 2, acorn bomb 1, mech flame 1, time bomb 3</option>
+                <option value="39">ice grenade, ice grenade, shark attack 2, wide wave 3</option>
+                <option value="3A">bushido 3, bushido 3, bushido 2, bushido 1</option>
+                <option value="3B">synch hook 1, freeze knuckle, heat upper 3, stun knuckle</option>
+                <option value="3C">fire+30, mech flame 3, mad fire 3, Ox fire V2</option>
+                <option value="3D">aqua+30, shark attack 3, bubble hook 3, diamond ice V2</option>
+                <option value="3E">shuriken 3, wide wave 3, stealth lazer 3, smile coin 3</option>
+                <option value="3F">mech flame 3, dance fire 3, mad fire 3, heat upper 3</option>
+                <option value="40">ice spin 3, wide wave 2, shark attack 3, bubble hook 3</option>
+                <option value="41">Skull arrow 3, skull arrow 3, jet attack 3, buki 3</option>
+                <option value="42">beast slap 3, beast slap 3, mal wizard 3, scythe 1</option>
+                <option value="43">tornado dance, air burst 3, vulcan seed 1, machine gun 3</option>
+                <option value="44">panic cloud, panic cloud, flash strike 3, pollon shot 3</option>
+                <option value="45">
+                  elec slash, mummy hand 3, arach attack 3, earth thunder 3
+                </option>
+                <option value="46">machine flame 3, white meteor, big drop 3, time bomb 3</option>
+                <option value="47">mini grenade 1, sword, wide sword, long sword</option>
+                <option value="48">windy attack 3, tornado dance, squall 3, scythe 3</option>
+                <option value="49">sword fighter 3, elec slash, wood slash, spin blade 1</option>
+                <option value="4A">ice grenade, wide wave 3, shark attack 3, heat axe</option>
+                <option value="4B">great axe, buki 3, drill arm 3, break sabre</option>
+                <option value="4C">mad fire 3, time bomb 3, kilo bomb 3, kilo bomb 3</option>
+                <option value="4D">
+                  elec+30, flash strike 3, earth thunder 3, spade magnes V3
+                </option>
+                <option value="4E">wood+30, squall 3, vulcan seed 1, club strong V3</option>
+                <option value="4F">break sabre, drill arm 3, sword fighter 3, acid ace V3</option>
+                <option value="50">
+                  stun knuckle, freeze knuckle, poisen knuckle, destroy upper
+                </option>
+                <option value="51">flash strike 2, shuriken 2, heat upper 2, shark attack 2</option>
+                <option value="52">wood slash, arach attack 2, stealth lazer 2, shuriken 2</option>
+                <option value="53">
+                  meteorite barrage (Big bang), gravity plus, wide wave 1, beast slap 1
+                </option>
+                <option value="54">
+                  atomic blazer (Big bang), attack+10, heat upper 1, beast slap 1
+                </option>
+                <option value="55">beast slap 1, gravity plus, ice spin 1, buzz saw 1</option>
+                <option value="56">heat upper 2, mad fire 1, time bomb 2, dance fire 1</option>
+                <option value="57">wide wave 2, shark attack 2, blue ink, ice grenade</option>
+                <option value="58">flash strike 3, elec slash, elec slash, thunder head 2</option>
+                <option value="59">pollon shot 3, vulcan seed 1, shuriken 3, vulcan seed 2</option>
+                <option value="5A">typhoon dance, tornado dance, windy attack 3, scythe 3</option>
+                <option value="5B">heat upper 3, buki 3, break sabre, big drop 3</option>
+                <option value="5C">
+                  grand wave 3, sword fighter 3, noise wizard 2, drill arm 3
+                </option>
+                <option value="5D">double eater, mal wizard 2, beast slap 3, jack corvus V1</option>
+                <option value="5E">double eater, bubble hook 3, wide wave 3, queen virgo V1</option>
+                <option value="5F">buki 3, heat upper 3, great axe, dread joker V1</option>
+                <option value="60">break sabre, stealth lazer 3, buzz saw 3, acid ace</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              NKG01:
+              <select name="nkg_01">
+                <option value="64">none</option>
+                <option value="00">♥1: Leo Kingdom Noise - Fire GA</option>
+                <option value="01">♥2: Moaian Noise - Break+10</option>
+                <option value="02">♥3: Taurus Fire Noise - Super Armor</option>
+                <option value="03">♥4: Raid Noise - HP+250</option>
+                <option value="04">♥5: Melamander Noise - Fire+10</option>
+                <option value="05">♥6: Koma Noise - Atk Panel Support</option>
+                <option value="06">♥7: Doom Count Noise - No Flash/Flash Body</option>
+                <option value="07">♥8: Ku'i Noise - Big Drop/Heavy Dawn Charge</option>
+                <option value="08">♥9: Mettenna Noise - Reflect</option>
+                <option value="09">♥10: Bom Noise - Bombilzer Support</option>
+                <option value="0A">♥11: Jack Corvus Noise - Fire+20</option>
+                <option value="0B">♥12: Hot Roader Noise - HP+150</option>
+                <option value="0C">♥1: Boodach Noise - HP+200</option>
+                <option value="0D">♥2: Scorcher Noise - Mech Flame Charge</option>
+                <option value="0E">♥3: Bubba Dance Noise - Atk+10 Support</option>
+                <option value="0F">♥5: Sirius Noise - Break+20</option>
+                <option value="10">♥7: Boom Noise - Fire+10</option>
+                <option value="11">♥8: Libra Scales Noise - HP+400</option>
+                <option value="12">♥9: Musashi Noise - Sword+10</option>
+                <option value="13">♥10: Omega-Xis/War-Rock Copy - Double Eater Support</option>
+                <option value="14">♥11: RockyG Noise - Cross Shot Charge</option>
+                <option value="15">♥12: HarpNote Noise - Normal GA+</option>
+                <option value="16">♥13: Grabity Noise - +Poison Panel</option>
+                <option value="17">♥13: Apollo Flame Noise - First Aura</option>
+                <option value="18">♦1: Hare Jet Noise - +Ice Panel</option>
+                <option value="19">♦3: Blue Shark Noise - Aqua+10</option>
+                <option value="1A">♦4: General Auriga Noise - Whistle Support</option>
+                <option value="1B">♦5: Chakram Noise - BuzzSaw Charge</option>
+                <option value="1C">♦6: Sno Roll Noise - First Barrier</option>
+                <option value="1D">♦7: Diamond Ice Noise - Aqua+20</option>
+                <option value="1E">♦9: Octo Ninja Noise - Black Ink Support</option>
+                <option value="1F">♦10: Piran Noise - HP+250</option>
+                <option value="20">♦11: Gooey Noise - No Gravity/Gravity Body</option>
+                <option value="21">♦12: Lu Pelvis Noise - +Panic</option>
+                <option value="22">♦13: Pegasus Magic - Aqua GA+</option>
+                <option value="23">♦1: Wibbledee Noise - Aqua+10</option>
+                <option value="24">♦2: Stream Cancer Noise - Ice Support</option>
+                <option value="25">♦3: Spinguin Noise - Ice Spin Charge</option>
+                <option value="26">♦4: Junk-O Noise - Break+10</option>
+                <option value="27">♦5: Jammer Noise - HP+250</option>
+                <option value="28">♦6: Yeti Blizzard Noise - No Freeze/Freeze Body</option>
+                <option value="29">♦7: BoneArcher Noise - +Gravity</option>
+                <option value="2A">♦8: Mal Wizard Noise - +ParaPnl</option>
+                <option value="2B">♦10: Cannon Base Noise - HP+150</option>
+                <option value="2C">♦11: Plesio Surf Noise - Paralyze+ Support</option>
+                <option value="2D">♦12: Queen Virgo Noise - Mega Class+1</option>
+                <option value="2E">♦13: Air Squiggle Noise - HP+250</option>
+                <option value="2F">♦2: Cancer Bubble Noise - No Bubble/Bubble Body</option>
+                <option value="30">♠2: Voltragon Noise - Elec+10</option>
+                <option value="31">♠3: Moon Destroyer Noise - HP+300</option>
+                <option value="32">♠4: Boom Bolt Noise - Panic Cloud Support</option>
+                <option value="33">♠5: Eyez Noise - +Invis</option>
+                <option value="34">♠6: Dark Reaper Noise - HP+200</option>
+                <option value="35">♠7: Dark Phantom Noise - Under Shirt</option>
+                <option value="36">♠8: Shock Mummy Noise - HP+150</option>
+                <option value="37">♠9: Noise Wizard Noise - GNull Panel</option>
+                <option value="38">♠10: Base Mortar Noise - Mad Vulcan Charge</option>
+                <option value="39">♠11: Great Axe Noise - HP+250</option>
+                <option value="3A">♠12: Peakaboo Noise - +Blind</option>
+                <option value="3B">♠13: Rogue Noise - Sword+20</option>
+                <option value="3C">♠1: McCleaver Noise - HP+200</option>
+                <option value="3D">♠2: Bell Gong Noise - HP+150</option>
+                <option value="3E">♠3: Smiles Noise - HP+150</option>
+                <option value="3F">♠4: Zapper Noise - Flash Strike Charge</option>
+                <option value="40">♠6: Crown Thunder Noise - Paralysis Stage Support</option>
+                <option value="41">♠7: Lampis Noise - Elec+10</option>
+                <option value="42">♠8: Zap Ace Noise - +Paralyze</option>
+                <option value="43">♠9: Hollow Noise - No Paralyze/Paralyze Body</option>
+                <option value="44">♠10: Spade Magnes Noise - Elec+20</option>
+                <option value="45">♠11: Stealth Noise - HP+150</option>
+                <option value="46">♠13: Magera Noise - Card Heal</option>
+                <option value="47">♣1: Gemini Spark Noise - ElecGA+</option>
+                <option value="48">♣1: Mu Defender Noise - Mu Technology Charge</option>
+                <option value="49">♣2: Private Mop Noise - Wood+10</option>
+                <option value="4A">♣4: Wolf Woods Noise - HP+400</option>
+                <option value="4B">♣5: Mono Sword Noise - Sword+10</option>
+                <option value="4C">♣6: Storm Noise - +Wind</option>
+                <option value="4D">♣7: Grass Pollen Noise - +Wood Panel</option>
+                <option value="4E">♣8: Kung Foo Kid Noise - Quick Gauge</option>
+                <option value="4F">♣9: Club Strong Noise - Wood+20</option>
+                <option value="50">♣11: Mat Jinn Noise - Grass Support</option>
+                <option value="51">♣12: Puff Noise - Recover 30 Support</option>
+                <option value="52">♣13: Arachnid Noise - HP+250</option>
+                <option value="53">♣1: Rhino Horn Noise - HP+250</option>
+                <option value="54">♣2: Terra Condor Noise - Air Shoes</option>
+                <option value="55">♣3: Crowcar Noise - HP+250</option>
+                <option value="56">♣4: Flit Noise - Wood+20</option>
+                <option value="57">♣5: Dragon Sky Noise - Wood GA+</option>
+                <option value="58">♣7: Nutty Noise - Spread Charge</option>
+                <option value="59">♣8: Tropi Conga Noise - HP+250</option>
+                <option value="5A">♣9: Fokx Noise - Anti Damage</option>
+                <option value="5B">♣10: Murian Noise - Divide Line Support</option>
+                <option value="5C">♣12: Queen Ophiuca Noise - HP+400</option>
+                <option value="5D">♣13: ShuriKen Noise - Shuriken Charge</option>
+                <option value="5E">♣6: Cygnus Wing Noise - Float Shoes</option>
+                <option value="5F">
+                  ★: Dread Joker Noise - Body Pack (Super Armor, Float Shoes, Air Shoes, Under
+                  Shirt)
+                </option>
+                <option value="60">★: Andromeda Noise - Max Buster</option>
+                <option value="61">★: Acid Ace Noise - Auto Lock</option>
+                <option value="62">★: Le Mu Noise - Invisible Support</option>
+                <option value="63">★: Crimson Dragon Noise- HP+500</option>
+              </select>
+            </td>
+            <td>
+              NKG02:
+              <select name="nkg_02">
+                <option value="64">none</option>
+                <option value="00">♥1: Leo Kingdom Noise - Fire GA</option>
+                <option value="01">♥2: Moaian Noise - Break+10</option>
+                <option value="02">♥3: Taurus Fire Noise - Super Armor</option>
+                <option value="03">♥4: Raid Noise - HP+250</option>
+                <option value="04">♥5: Melamander Noise - Fire+10</option>
+                <option value="05">♥6: Koma Noise - Atk Panel Support</option>
+                <option value="06">♥7: Doom Count Noise - No Flash/Flash Body</option>
+                <option value="07">♥8: Ku'i Noise - Big Drop/Heavy Dawn Charge</option>
+                <option value="08">♥9: Mettenna Noise - Reflect</option>
+                <option value="09">♥10: Bom Noise - Bombilzer Support</option>
+                <option value="0A">♥11: Jack Corvus Noise - Fire+20</option>
+                <option value="0B">♥12: Hot Roader Noise - HP+150</option>
+                <option value="0C">♥1: Boodach Noise - HP+200</option>
+                <option value="0D">♥2: Scorcher Noise - Mech Flame Charge</option>
+                <option value="0E">♥3: Bubba Dance Noise - Atk+10 Support</option>
+                <option value="0F">♥5: Sirius Noise - Break+20</option>
+                <option value="10">♥7: Boom Noise - Fire+10</option>
+                <option value="11">♥8: Libra Scales Noise - HP+400</option>
+                <option value="12">♥9: Musashi Noise - Sword+10</option>
+                <option value="13">♥10: Omega-Xis/War-Rock Copy - Double Eater Support</option>
+                <option value="14">♥11: RockyG Noise - Cross Shot Charge</option>
+                <option value="15">♥12: HarpNote Noise - Normal GA+</option>
+                <option value="16">♥13: Grabity Noise - +Poison Panel</option>
+                <option value="17">♥13: Apollo Flame Noise - First Aura</option>
+                <option value="18">♦1: Hare Jet Noise - +Ice Panel</option>
+                <option value="19">♦3: Blue Shark Noise - Aqua+10</option>
+                <option value="1A">♦4: General Auriga Noise - Whistle Support</option>
+                <option value="1B">♦5: Chakram Noise - BuzzSaw Charge</option>
+                <option value="1C">♦6: Sno Roll Noise - First Barrier</option>
+                <option value="1D">♦7: Diamond Ice Noise - Aqua+20</option>
+                <option value="1E">♦9: Octo Ninja Noise - Black Ink Support</option>
+                <option value="1F">♦10: Piran Noise - HP+250</option>
+                <option value="20">♦11: Gooey Noise - No Gravity/Gravity Body</option>
+                <option value="21">♦12: Lu Pelvis Noise - +Panic</option>
+                <option value="22">♦13: Pegasus Magic - Aqua GA+</option>
+                <option value="23">♦1: Wibbledee Noise - Aqua+10</option>
+                <option value="24">♦2: Stream Cancer Noise - Ice Support</option>
+                <option value="25">♦3: Spinguin Noise - Ice Spin Charge</option>
+                <option value="26">♦4: Junk-O Noise - Break+10</option>
+                <option value="27">♦5: Jammer Noise - HP+250</option>
+                <option value="28">♦6: Yeti Blizzard Noise - No Freeze/Freeze Body</option>
+                <option value="29">♦7: BoneArcher Noise - +Gravity</option>
+                <option value="2A">♦8: Mal Wizard Noise - +ParaPnl</option>
+                <option value="2B">♦10: Cannon Base Noise - HP+150</option>
+                <option value="2C">♦11: Plesio Surf Noise - Paralyze+ Support</option>
+                <option value="2D">♦12: Queen Virgo Noise - Mega Class+1</option>
+                <option value="2E">♦13: Air Squiggle Noise - HP+250</option>
+                <option value="2F">♦2: Cancer Bubble Noise - No Bubble/Bubble Body</option>
+                <option value="30">♠2: Voltragon Noise - Elec+10</option>
+                <option value="31">♠3: Moon Destroyer Noise - HP+300</option>
+                <option value="32">♠4: Boom Bolt Noise - Panic Cloud Support</option>
+                <option value="33">♠5: Eyez Noise - +Invis</option>
+                <option value="34">♠6: Dark Reaper Noise - HP+200</option>
+                <option value="35">♠7: Dark Phantom Noise - Under Shirt</option>
+                <option value="36">♠8: Shock Mummy Noise - HP+150</option>
+                <option value="37">♠9: Noise Wizard Noise - GNull Panel</option>
+                <option value="38">♠10: Base Mortar Noise - Mad Vulcan Charge</option>
+                <option value="39">♠11: Great Axe Noise - HP+250</option>
+                <option value="3A">♠12: Peakaboo Noise - +Blind</option>
+                <option value="3B">♠13: Rogue Noise - Sword+20</option>
+                <option value="3C">♠1: McCleaver Noise - HP+200</option>
+                <option value="3D">♠2: Bell Gong Noise - HP+150</option>
+                <option value="3E">♠3: Smiles Noise - HP+150</option>
+                <option value="3F">♠4: Zapper Noise - Flash Strike Charge</option>
+                <option value="40">♠6: Crown Thunder Noise - Paralysis Stage Support</option>
+                <option value="41">♠7: Lampis Noise - Elec+10</option>
+                <option value="42">♠8: Zap Ace Noise - +Paralyze</option>
+                <option value="43">♠9: Hollow Noise - No Paralyze/Paralyze Body</option>
+                <option value="44">♠10: Spade Magnes Noise - Elec+20</option>
+                <option value="45">♠11: Stealth Noise - HP+150</option>
+                <option value="46">♠13: Magera Noise - Card Heal</option>
+                <option value="47">♣1: Gemini Spark Noise - ElecGA+</option>
+                <option value="48">♣1: Mu Defender Noise - Mu Technology Charge</option>
+                <option value="49">♣2: Private Mop Noise - Wood+10</option>
+                <option value="4A">♣4: Wolf Woods Noise - HP+400</option>
+                <option value="4B">♣5: Mono Sword Noise - Sword+10</option>
+                <option value="4C">♣6: Storm Noise - +Wind</option>
+                <option value="4D">♣7: Grass Pollen Noise - +Wood Panel</option>
+                <option value="4E">♣8: Kung Foo Kid Noise - Quick Gauge</option>
+                <option value="4F">♣9: Club Strong Noise - Wood+20</option>
+                <option value="50">♣11: Mat Jinn Noise - Grass Support</option>
+                <option value="51">♣12: Puff Noise - Recover 30 Support</option>
+                <option value="52">♣13: Arachnid Noise - HP+250</option>
+                <option value="53">♣1: Rhino Horn Noise - HP+250</option>
+                <option value="54">♣2: Terra Condor Noise - Air Shoes</option>
+                <option value="55">♣3: Crowcar Noise - HP+250</option>
+                <option value="56">♣4: Flit Noise - Wood+20</option>
+                <option value="57">♣5: Dragon Sky Noise - Wood GA+</option>
+                <option value="58">♣7: Nutty Noise - Spread Charge</option>
+                <option value="59">♣8: Tropi Conga Noise - HP+250</option>
+                <option value="5A">♣9: Fokx Noise - Anti Damage</option>
+                <option value="5B">♣10: Murian Noise - Divide Line Support</option>
+                <option value="5C">♣12: Queen Ophiuca Noise - HP+400</option>
+                <option value="5D">♣13: ShuriKen Noise - Shuriken Charge</option>
+                <option value="5E">♣6: Cygnus Wing Noise - Float Shoes</option>
+                <option value="5F">
+                  ★: Dread Joker Noise - Body Pack (Super Armor, Float Shoes, Air Shoes, Under
+                  Shirt)
+                </option>
+                <option value="60">★: Andromeda Noise - Max Buster</option>
+                <option value="61">★: Acid Ace Noise - Auto Lock</option>
+                <option value="62">★: Le Mu Noise - Invisible Support</option>
+                <option value="63">★: Crimson Dragon Noise- HP+500</option>
+              </select>
+            </td>
+            <td>
+              NKG03:
+              <select name="nkg_03">
+                <option value="64">none</option>
+                <option value="00">♥1: Leo Kingdom Noise - Fire GA</option>
+                <option value="01">♥2: Moaian Noise - Break+10</option>
+                <option value="02">♥3: Taurus Fire Noise - Super Armor</option>
+                <option value="03">♥4: Raid Noise - HP+250</option>
+                <option value="04">♥5: Melamander Noise - Fire+10</option>
+                <option value="05">♥6: Koma Noise - Atk Panel Support</option>
+                <option value="06">♥7: Doom Count Noise - No Flash/Flash Body</option>
+                <option value="07">♥8: Ku'i Noise - Big Drop/Heavy Dawn Charge</option>
+                <option value="08">♥9: Mettenna Noise - Reflect</option>
+                <option value="09">♥10: Bom Noise - Bombilzer Support</option>
+                <option value="0A">♥11: Jack Corvus Noise - Fire+20</option>
+                <option value="0B">♥12: Hot Roader Noise - HP+150</option>
+                <option value="0C">♥1: Boodach Noise - HP+200</option>
+                <option value="0D">♥2: Scorcher Noise - Mech Flame Charge</option>
+                <option value="0E">♥3: Bubba Dance Noise - Atk+10 Support</option>
+                <option value="0F">♥5: Sirius Noise - Break+20</option>
+                <option value="10">♥7: Boom Noise - Fire+10</option>
+                <option value="11">♥8: Libra Scales Noise - HP+400</option>
+                <option value="12">♥9: Musashi Noise - Sword+10</option>
+                <option value="13">♥10: Omega-Xis/War-Rock Copy - Double Eater Support</option>
+                <option value="14">♥11: RockyG Noise - Cross Shot Charge</option>
+                <option value="15">♥12: HarpNote Noise - Normal GA+</option>
+                <option value="16">♥13: Grabity Noise - +Poison Panel</option>
+                <option value="17">♥13: Apollo Flame Noise - First Aura</option>
+                <option value="18">♦1: Hare Jet Noise - +Ice Panel</option>
+                <option value="19">♦3: Blue Shark Noise - Aqua+10</option>
+                <option value="1A">♦4: General Auriga Noise - Whistle Support</option>
+                <option value="1B">♦5: Chakram Noise - BuzzSaw Charge</option>
+                <option value="1C">♦6: Sno Roll Noise - First Barrier</option>
+                <option value="1D">♦7: Diamond Ice Noise - Aqua+20</option>
+                <option value="1E">♦9: Octo Ninja Noise - Black Ink Support</option>
+                <option value="1F">♦10: Piran Noise - HP+250</option>
+                <option value="20">♦11: Gooey Noise - No Gravity/Gravity Body</option>
+                <option value="21">♦12: Lu Pelvis Noise - +Panic</option>
+                <option value="22">♦13: Pegasus Magic - Aqua GA+</option>
+                <option value="23">♦1: Wibbledee Noise - Aqua+10</option>
+                <option value="24">♦2: Stream Cancer Noise - Ice Support</option>
+                <option value="25">♦3: Spinguin Noise - Ice Spin Charge</option>
+                <option value="26">♦4: Junk-O Noise - Break+10</option>
+                <option value="27">♦5: Jammer Noise - HP+250</option>
+                <option value="28">♦6: Yeti Blizzard Noise - No Freeze/Freeze Body</option>
+                <option value="29">♦7: BoneArcher Noise - +Gravity</option>
+                <option value="2A">♦8: Mal Wizard Noise - +ParaPnl</option>
+                <option value="2B">♦10: Cannon Base Noise - HP+150</option>
+                <option value="2C">♦11: Plesio Surf Noise - Paralyze+ Support</option>
+                <option value="2D">♦12: Queen Virgo Noise - Mega Class+1</option>
+                <option value="2E">♦13: Air Squiggle Noise - HP+250</option>
+                <option value="2F">♦2: Cancer Bubble Noise - No Bubble/Bubble Body</option>
+                <option value="30">♠2: Voltragon Noise - Elec+10</option>
+                <option value="31">♠3: Moon Destroyer Noise - HP+300</option>
+                <option value="32">♠4: Boom Bolt Noise - Panic Cloud Support</option>
+                <option value="33">♠5: Eyez Noise - +Invis</option>
+                <option value="34">♠6: Dark Reaper Noise - HP+200</option>
+                <option value="35">♠7: Dark Phantom Noise - Under Shirt</option>
+                <option value="36">♠8: Shock Mummy Noise - HP+150</option>
+                <option value="37">♠9: Noise Wizard Noise - GNull Panel</option>
+                <option value="38">♠10: Base Mortar Noise - Mad Vulcan Charge</option>
+                <option value="39">♠11: Great Axe Noise - HP+250</option>
+                <option value="3A">♠12: Peakaboo Noise - +Blind</option>
+                <option value="3B">♠13: Rogue Noise - Sword+20</option>
+                <option value="3C">♠1: McCleaver Noise - HP+200</option>
+                <option value="3D">♠2: Bell Gong Noise - HP+150</option>
+                <option value="3E">♠3: Smiles Noise - HP+150</option>
+                <option value="3F">♠4: Zapper Noise - Flash Strike Charge</option>
+                <option value="40">♠6: Crown Thunder Noise - Paralysis Stage Support</option>
+                <option value="41">♠7: Lampis Noise - Elec+10</option>
+                <option value="42">♠8: Zap Ace Noise - +Paralyze</option>
+                <option value="43">♠9: Hollow Noise - No Paralyze/Paralyze Body</option>
+                <option value="44">♠10: Spade Magnes Noise - Elec+20</option>
+                <option value="45">♠11: Stealth Noise - HP+150</option>
+                <option value="46">♠13: Magera Noise - Card Heal</option>
+                <option value="47">♣1: Gemini Spark Noise - ElecGA+</option>
+                <option value="48">♣1: Mu Defender Noise - Mu Technology Charge</option>
+                <option value="49">♣2: Private Mop Noise - Wood+10</option>
+                <option value="4A">♣4: Wolf Woods Noise - HP+400</option>
+                <option value="4B">♣5: Mono Sword Noise - Sword+10</option>
+                <option value="4C">♣6: Storm Noise - +Wind</option>
+                <option value="4D">♣7: Grass Pollen Noise - +Wood Panel</option>
+                <option value="4E">♣8: Kung Foo Kid Noise - Quick Gauge</option>
+                <option value="4F">♣9: Club Strong Noise - Wood+20</option>
+                <option value="50">♣11: Mat Jinn Noise - Grass Support</option>
+                <option value="51">♣12: Puff Noise - Recover 30 Support</option>
+                <option value="52">♣13: Arachnid Noise - HP+250</option>
+                <option value="53">♣1: Rhino Horn Noise - HP+250</option>
+                <option value="54">♣2: Terra Condor Noise - Air Shoes</option>
+                <option value="55">♣3: Crowcar Noise - HP+250</option>
+                <option value="56">♣4: Flit Noise - Wood+20</option>
+                <option value="57">♣5: Dragon Sky Noise - Wood GA+</option>
+                <option value="58">♣7: Nutty Noise - Spread Charge</option>
+                <option value="59">♣8: Tropi Conga Noise - HP+250</option>
+                <option value="5A">♣9: Fokx Noise - Anti Damage</option>
+                <option value="5B">♣10: Murian Noise - Divide Line Support</option>
+                <option value="5C">♣12: Queen Ophiuca Noise - HP+400</option>
+                <option value="5D">♣13: ShuriKen Noise - Shuriken Charge</option>
+                <option value="5E">♣6: Cygnus Wing Noise - Float Shoes</option>
+                <option value="5F">
+                  ★: Dread Joker Noise - Body Pack (Super Armor, Float Shoes, Air Shoes, Under
+                  Shirt)
+                </option>
+                <option value="60">★: Andromeda Noise - Max Buster</option>
+                <option value="61">★: Acid Ace Noise - Auto Lock</option>
+                <option value="62">★: Le Mu Noise - Invisible Support</option>
+                <option value="63">★: Crimson Dragon Noise- HP+500</option>
+              </select>
+            </td>
+            <td>
+              NKG04:
+              <select name="nkg_04">
+                <option value="64">none</option>
+                <option value="00">♥1: Leo Kingdom Noise - Fire GA</option>
+                <option value="01">♥2: Moaian Noise - Break+10</option>
+                <option value="02">♥3: Taurus Fire Noise - Super Armor</option>
+                <option value="03">♥4: Raid Noise - HP+250</option>
+                <option value="04">♥5: Melamander Noise - Fire+10</option>
+                <option value="05">♥6: Koma Noise - Atk Panel Support</option>
+                <option value="06">♥7: Doom Count Noise - No Flash/Flash Body</option>
+                <option value="07">♥8: Ku'i Noise - Big Drop/Heavy Dawn Charge</option>
+                <option value="08">♥9: Mettenna Noise - Reflect</option>
+                <option value="09">♥10: Bom Noise - Bombilzer Support</option>
+                <option value="0A">♥11: Jack Corvus Noise - Fire+20</option>
+                <option value="0B">♥12: Hot Roader Noise - HP+150</option>
+                <option value="0C">♥1: Boodach Noise - HP+200</option>
+                <option value="0D">♥2: Scorcher Noise - Mech Flame Charge</option>
+                <option value="0E">♥3: Bubba Dance Noise - Atk+10 Support</option>
+                <option value="0F">♥5: Sirius Noise - Break+20</option>
+                <option value="10">♥7: Boom Noise - Fire+10</option>
+                <option value="11">♥8: Libra Scales Noise - HP+400</option>
+                <option value="12">♥9: Musashi Noise - Sword+10</option>
+                <option value="13">♥10: Omega-Xis/War-Rock Copy - Double Eater Support</option>
+                <option value="14">♥11: RockyG Noise - Cross Shot Charge</option>
+                <option value="15">♥12: HarpNote Noise - Normal GA+</option>
+                <option value="16">♥13: Grabity Noise - +Poison Panel</option>
+                <option value="17">♥13: Apollo Flame Noise - First Aura</option>
+                <option value="18">♦1: Hare Jet Noise - +Ice Panel</option>
+                <option value="19">♦3: Blue Shark Noise - Aqua+10</option>
+                <option value="1A">♦4: General Auriga Noise - Whistle Support</option>
+                <option value="1B">♦5: Chakram Noise - BuzzSaw Charge</option>
+                <option value="1C">♦6: Sno Roll Noise - First Barrier</option>
+                <option value="1D">♦7: Diamond Ice Noise - Aqua+20</option>
+                <option value="1E">♦9: Octo Ninja Noise - Black Ink Support</option>
+                <option value="1F">♦10: Piran Noise - HP+250</option>
+                <option value="20">♦11: Gooey Noise - No Gravity/Gravity Body</option>
+                <option value="21">♦12: Lu Pelvis Noise - +Panic</option>
+                <option value="22">♦13: Pegasus Magic - Aqua GA+</option>
+                <option value="23">♦1: Wibbledee Noise - Aqua+10</option>
+                <option value="24">♦2: Stream Cancer Noise - Ice Support</option>
+                <option value="25">♦3: Spinguin Noise - Ice Spin Charge</option>
+                <option value="26">♦4: Junk-O Noise - Break+10</option>
+                <option value="27">♦5: Jammer Noise - HP+250</option>
+                <option value="28">♦6: Yeti Blizzard Noise - No Freeze/Freeze Body</option>
+                <option value="29">♦7: BoneArcher Noise - +Gravity</option>
+                <option value="2A">♦8: Mal Wizard Noise - +ParaPnl</option>
+                <option value="2B">♦10: Cannon Base Noise - HP+150</option>
+                <option value="2C">♦11: Plesio Surf Noise - Paralyze+ Support</option>
+                <option value="2D">♦12: Queen Virgo Noise - Mega Class+1</option>
+                <option value="2E">♦13: Air Squiggle Noise - HP+250</option>
+                <option value="2F">♦2: Cancer Bubble Noise - No Bubble/Bubble Body</option>
+                <option value="30">♠2: Voltragon Noise - Elec+10</option>
+                <option value="31">♠3: Moon Destroyer Noise - HP+300</option>
+                <option value="32">♠4: Boom Bolt Noise - Panic Cloud Support</option>
+                <option value="33">♠5: Eyez Noise - +Invis</option>
+                <option value="34">♠6: Dark Reaper Noise - HP+200</option>
+                <option value="35">♠7: Dark Phantom Noise - Under Shirt</option>
+                <option value="36">♠8: Shock Mummy Noise - HP+150</option>
+                <option value="37">♠9: Noise Wizard Noise - GNull Panel</option>
+                <option value="38">♠10: Base Mortar Noise - Mad Vulcan Charge</option>
+                <option value="39">♠11: Great Axe Noise - HP+250</option>
+                <option value="3A">♠12: Peakaboo Noise - +Blind</option>
+                <option value="3B">♠13: Rogue Noise - Sword+20</option>
+                <option value="3C">♠1: McCleaver Noise - HP+200</option>
+                <option value="3D">♠2: Bell Gong Noise - HP+150</option>
+                <option value="3E">♠3: Smiles Noise - HP+150</option>
+                <option value="3F">♠4: Zapper Noise - Flash Strike Charge</option>
+                <option value="40">♠6: Crown Thunder Noise - Paralysis Stage Support</option>
+                <option value="41">♠7: Lampis Noise - Elec+10</option>
+                <option value="42">♠8: Zap Ace Noise - +Paralyze</option>
+                <option value="43">♠9: Hollow Noise - No Paralyze/Paralyze Body</option>
+                <option value="44">♠10: Spade Magnes Noise - Elec+20</option>
+                <option value="45">♠11: Stealth Noise - HP+150</option>
+                <option value="46">♠13: Magera Noise - Card Heal</option>
+                <option value="47">♣1: Gemini Spark Noise - ElecGA+</option>
+                <option value="48">♣1: Mu Defender Noise - Mu Technology Charge</option>
+                <option value="49">♣2: Private Mop Noise - Wood+10</option>
+                <option value="4A">♣4: Wolf Woods Noise - HP+400</option>
+                <option value="4B">♣5: Mono Sword Noise - Sword+10</option>
+                <option value="4C">♣6: Storm Noise - +Wind</option>
+                <option value="4D">♣7: Grass Pollen Noise - +Wood Panel</option>
+                <option value="4E">♣8: Kung Foo Kid Noise - Quick Gauge</option>
+                <option value="4F">♣9: Club Strong Noise - Wood+20</option>
+                <option value="50">♣11: Mat Jinn Noise - Grass Support</option>
+                <option value="51">♣12: Puff Noise - Recover 30 Support</option>
+                <option value="52">♣13: Arachnid Noise - HP+250</option>
+                <option value="53">♣1: Rhino Horn Noise - HP+250</option>
+                <option value="54">♣2: Terra Condor Noise - Air Shoes</option>
+                <option value="55">♣3: Crowcar Noise - HP+250</option>
+                <option value="56">♣4: Flit Noise - Wood+20</option>
+                <option value="57">♣5: Dragon Sky Noise - Wood GA+</option>
+                <option value="58">♣7: Nutty Noise - Spread Charge</option>
+                <option value="59">♣8: Tropi Conga Noise - HP+250</option>
+                <option value="5A">♣9: Fokx Noise - Anti Damage</option>
+                <option value="5B">♣10: Murian Noise - Divide Line Support</option>
+                <option value="5C">♣12: Queen Ophiuca Noise - HP+400</option>
+                <option value="5D">♣13: ShuriKen Noise - Shuriken Charge</option>
+                <option value="5E">♣6: Cygnus Wing Noise - Float Shoes</option>
+                <option value="5F">
+                  ★: Dread Joker Noise - Body Pack (Super Armor, Float Shoes, Air Shoes, Under
+                  Shirt)
+                </option>
+                <option value="60">★: Andromeda Noise - Max Buster</option>
+                <option value="61">★: Acid Ace Noise - Auto Lock</option>
+                <option value="62">★: Le Mu Noise - Invisible Support</option>
+                <option value="63">★: Crimson Dragon Noise- HP+500</option>
+              </select>
+            </td>
+            <td>
+              NKG05:
+              <select name="nkg_05">
+                <option value="64">none</option>
+                <option value="00">♥1: Leo Kingdom Noise - Fire GA</option>
+                <option value="01">♥2: Moaian Noise - Break+10</option>
+                <option value="02">♥3: Taurus Fire Noise - Super Armor</option>
+                <option value="03">♥4: Raid Noise - HP+250</option>
+                <option value="04">♥5: Melamander Noise - Fire+10</option>
+                <option value="05">♥6: Koma Noise - Atk Panel Support</option>
+                <option value="06">♥7: Doom Count Noise - No Flash/Flash Body</option>
+                <option value="07">♥8: Ku'i Noise - Big Drop/Heavy Dawn Charge</option>
+                <option value="08">♥9: Mettenna Noise - Reflect</option>
+                <option value="09">♥10: Bom Noise - Bombilzer Support</option>
+                <option value="0A">♥11: Jack Corvus Noise - Fire+20</option>
+                <option value="0B">♥12: Hot Roader Noise - HP+150</option>
+                <option value="0C">♥1: Boodach Noise - HP+200</option>
+                <option value="0D">♥2: Scorcher Noise - Mech Flame Charge</option>
+                <option value="0E">♥3: Bubba Dance Noise - Atk+10 Support</option>
+                <option value="0F">♥5: Sirius Noise - Break+20</option>
+                <option value="10">♥7: Boom Noise - Fire+10</option>
+                <option value="11">♥8: Libra Scales Noise - HP+400</option>
+                <option value="12">♥9: Musashi Noise - Sword+10</option>
+                <option value="13">♥10: Omega-Xis/War-Rock Copy - Double Eater Support</option>
+                <option value="14">♥11: RockyG Noise - Cross Shot Charge</option>
+                <option value="15">♥12: HarpNote Noise - Normal GA+</option>
+                <option value="16">♥13: Grabity Noise - +Poison Panel</option>
+                <option value="17">♥13: Apollo Flame Noise - First Aura</option>
+                <option value="18">♦1: Hare Jet Noise - +Ice Panel</option>
+                <option value="19">♦3: Blue Shark Noise - Aqua+10</option>
+                <option value="1A">♦4: General Auriga Noise - Whistle Support</option>
+                <option value="1B">♦5: Chakram Noise - BuzzSaw Charge</option>
+                <option value="1C">♦6: Sno Roll Noise - First Barrier</option>
+                <option value="1D">♦7: Diamond Ice Noise - Aqua+20</option>
+                <option value="1E">♦9: Octo Ninja Noise - Black Ink Support</option>
+                <option value="1F">♦10: Piran Noise - HP+250</option>
+                <option value="20">♦11: Gooey Noise - No Gravity/Gravity Body</option>
+                <option value="21">♦12: Lu Pelvis Noise - +Panic</option>
+                <option value="22">♦13: Pegasus Magic - Aqua GA+</option>
+                <option value="23">♦1: Wibbledee Noise - Aqua+10</option>
+                <option value="24">♦2: Stream Cancer Noise - Ice Support</option>
+                <option value="25">♦3: Spinguin Noise - Ice Spin Charge</option>
+                <option value="26">♦4: Junk-O Noise - Break+10</option>
+                <option value="27">♦5: Jammer Noise - HP+250</option>
+                <option value="28">♦6: Yeti Blizzard Noise - No Freeze/Freeze Body</option>
+                <option value="29">♦7: BoneArcher Noise - +Gravity</option>
+                <option value="2A">♦8: Mal Wizard Noise - +ParaPnl</option>
+                <option value="2B">♦10: Cannon Base Noise - HP+150</option>
+                <option value="2C">♦11: Plesio Surf Noise - Paralyze+ Support</option>
+                <option value="2D">♦12: Queen Virgo Noise - Mega Class+1</option>
+                <option value="2E">♦13: Air Squiggle Noise - HP+250</option>
+                <option value="2F">♦2: Cancer Bubble Noise - No Bubble/Bubble Body</option>
+                <option value="30">♠2: Voltragon Noise - Elec+10</option>
+                <option value="31">♠3: Moon Destroyer Noise - HP+300</option>
+                <option value="32">♠4: Boom Bolt Noise - Panic Cloud Support</option>
+                <option value="33">♠5: Eyez Noise - +Invis</option>
+                <option value="34">♠6: Dark Reaper Noise - HP+200</option>
+                <option value="35">♠7: Dark Phantom Noise - Under Shirt</option>
+                <option value="36">♠8: Shock Mummy Noise - HP+150</option>
+                <option value="37">♠9: Noise Wizard Noise - GNull Panel</option>
+                <option value="38">♠10: Base Mortar Noise - Mad Vulcan Charge</option>
+                <option value="39">♠11: Great Axe Noise - HP+250</option>
+                <option value="3A">♠12: Peakaboo Noise - +Blind</option>
+                <option value="3B">♠13: Rogue Noise - Sword+20</option>
+                <option value="3C">♠1: McCleaver Noise - HP+200</option>
+                <option value="3D">♠2: Bell Gong Noise - HP+150</option>
+                <option value="3E">♠3: Smiles Noise - HP+150</option>
+                <option value="3F">♠4: Zapper Noise - Flash Strike Charge</option>
+                <option value="40">♠6: Crown Thunder Noise - Paralysis Stage Support</option>
+                <option value="41">♠7: Lampis Noise - Elec+10</option>
+                <option value="42">♠8: Zap Ace Noise - +Paralyze</option>
+                <option value="43">♠9: Hollow Noise - No Paralyze/Paralyze Body</option>
+                <option value="44">♠10: Spade Magnes Noise - Elec+20</option>
+                <option value="45">♠11: Stealth Noise - HP+150</option>
+                <option value="46">♠13: Magera Noise - Card Heal</option>
+                <option value="47">♣1: Gemini Spark Noise - ElecGA+</option>
+                <option value="48">♣1: Mu Defender Noise - Mu Technology Charge</option>
+                <option value="49">♣2: Private Mop Noise - Wood+10</option>
+                <option value="4A">♣4: Wolf Woods Noise - HP+400</option>
+                <option value="4B">♣5: Mono Sword Noise - Sword+10</option>
+                <option value="4C">♣6: Storm Noise - +Wind</option>
+                <option value="4D">♣7: Grass Pollen Noise - +Wood Panel</option>
+                <option value="4E">♣8: Kung Foo Kid Noise - Quick Gauge</option>
+                <option value="4F">♣9: Club Strong Noise - Wood+20</option>
+                <option value="50">♣11: Mat Jinn Noise - Grass Support</option>
+                <option value="51">♣12: Puff Noise - Recover 30 Support</option>
+                <option value="52">♣13: Arachnid Noise - HP+250</option>
+                <option value="53">♣1: Rhino Horn Noise - HP+250</option>
+                <option value="54">♣2: Terra Condor Noise - Air Shoes</option>
+                <option value="55">♣3: Crowcar Noise - HP+250</option>
+                <option value="56">♣4: Flit Noise - Wood+20</option>
+                <option value="57">♣5: Dragon Sky Noise - Wood GA+</option>
+                <option value="58">♣7: Nutty Noise - Spread Charge</option>
+                <option value="59">♣8: Tropi Conga Noise - HP+250</option>
+                <option value="5A">♣9: Fokx Noise - Anti Damage</option>
+                <option value="5B">♣10: Murian Noise - Divide Line Support</option>
+                <option value="5C">♣12: Queen Ophiuca Noise - HP+400</option>
+                <option value="5D">♣13: ShuriKen Noise - Shuriken Charge</option>
+                <option value="5E">♣6: Cygnus Wing Noise - Float Shoes</option>
+                <option value="5F">
+                  ★: Dread Joker Noise - Body Pack (Super Armor, Float Shoes, Air Shoes, Under
+                  Shirt)
+                </option>
+                <option value="60">★: Andromeda Noise - Max Buster</option>
+                <option value="61">★: Acid Ace Noise - Auto Lock</option>
+                <option value="62">★: Le Mu Noise - Invisible Support</option>
+                <option value="63">★: Crimson Dragon Noise- HP+500</option>
+              </select>
+            </td>
+          </tr>
 
-		<div><id="titie-text" class="explanation">
-		<div class="shrt-sentence">
-			<h1 class="h3">MMSF3 ARcode genetator Based on JPRom </h1>
-			<p1> Attention※※If you used this generetor at your own risk thanks Thistle※※<p1>
-			<text></text>
-		</div>
-		</div>
+          <td colspan="5">
+            <input type="button" value="generate" name="gen" onclick="generate()" />
+            <input type="reset" value="reset" />
 
-	<div class="sidebar">
-			<h2 class="setting">Various of settings</h2>
-			<ul class="setting-column">
-				<li class="rj_indv">
-					<a href="mmsf_indv_set_en_rj.html" class="setting-link ">Mega man SF setting Ver.RJ</a>
-				</li>
-					<li class="rj_bro">
-					<a href="mmsf_bro_set_en_rj.html" class="setting-link ">Brother setting Ver.RJ</a>
-				</li>
-				<li class="ba_indv">
-					<a href="mmsf_indv_set_en_ba.html" class="setting-link ">Mega man SF setting Ver.BA</a>
-				</li>
-				<li class="ba_bro">
-					<a href="mmsf_bro_set_en_ba.html" class="setting-link ">Brother setting Ver.BA</a>
-				</li>
-					<li class="readme">
-					<a href="index.html" class="setting-link ">Readme</a>
-				</li>
-			</ul>
-	</div>
+            <br />
+            <textarea cols="40" rows="16" name="ans"></textarea>
+          </td>
+        </form>
 
-		<div class="setting-table">
-				<div class="table-body">
-					<h2>Megaman setting(NKG、whitecard、Purpose / Rezon Card、Noize Change) Ver.BA</h2>
-</div>
-	<table border="1">
-								<form name="indv">
-									<tr>
-										<td>Noize：
-									<select name="noize">
-													<option value="00">No noize
-													<option value="01">Libra
-													<option value="02">Corvus
-													<option value="03">Cancer
-													<option value="04">Gemini
-													<option value="05">Ophiuca
-													<option value="06">Cygnus
-													<option value="07">Taurus
-													<option value="08">Virgo
-													<option value="09">Crown
-													<option value="0A">Wolf
-													<option value="0B">Rogue
-										</select>
-									</td>
+        <script type="text/javascript">
+          function generate() {
+            //ノイズチェンジ
+            valc1 = document.indv.noize.value;
+            //レゾンチェンジ
+            valc2 = document.indv.rezon.value;
+            //ホワイトチェンジ
+            valc3 = document.indv.whitecard.value;
+            //ノイズカードチェンジ
+            valc4 = document.indv.nkg_01.value;
+            valc5 = document.indv.nkg_02.value;
+            valc6 = document.indv.nkg_03.value;
+            valc7 = document.indv.nkg_04.value;
+            valc8 = document.indv.nkg_05.value;
+            //レゾンフラグ
 
-	<td>Purpose / Rezon Card：
-		<select name="rezon">
-	<option value="00">Battle
-	<option value="01">Fire
-	<option value="02">Aqua
-	<option value="03">Thunder
-	<option value="04">Wood
-	<option value="05">Sword
-	<option value="06">Break
-	<option value="07">Guard
-	<option value="08">Paralyze
-	<option value="09">Finalize
-	</select>
-	</td>
+            document.indv.ans.value =
+              '220F39A0 000000' +
+              valc1 +
+              '\n' +
+              '220F399E 000000' +
+              valc2 +
+              '\n' +
+              '220F39A1 000000' +
+              valc3 +
+              '\n' +
+              '220FA0F4 000000' +
+              valc4 +
+              '\n' +
+              '220FA0F6 000000' +
+              valc5 +
+              '\n' +
+              '220FA0F8 000000' +
+              valc6 +
+              '\n' +
+              '220FA0FA 000000' +
+              valc7 +
+              '\n' +
+              '220FA0FC 000000' +
+              valc8 +
+              '\n';
+          }
+        </script>
+      </table>
 
-	<td colspan="4">
-		White Card:
-		<select name="whitecard">
-		<option value="00">	none
-		<option value="01"> plasma gun, Plasma gun, Air Spread 1, Beast Slap 1
-		<option value="02"> Wide Sword, Recover+30, GrandWave, Barrier
-		<option value="03"> Mad Vulcan 1, Mini Grenade, Long sword, Canon
-		<option value="04"> Plasma gun, invis, grand wave 1, beast slap 1
-		<option value="05"> Divide line, long sword, mad vulcan 1, recover+30
-		<option value="06"> Invis, grand wave 1, sword, mad vulcan 1
-		<option value="07"> Beast slap 1, canon, plasma gun, gravity plus
-		<option value="08"> Mini grenade, long sword, long sword, recover+30
-		<option value="0A"> air spread 1, machine gun 1, beast slap 1, air spread 1
-		<option value="0B"> flash strike 1, flash strike 1, machine gun 1, gravity plus
-		<option value="0C"> beast slap 1, beast slap 1, air spread 1, attack+10
-		<option value="0D"> grand wave 1, machine gun 1, attack+10, beast slap 1
-		<option value="0E"> air spread 2, wide wave 1, gravity plus, divide line
-		<option value="0F"> jet attack 1, jet attack 1, gravity plus, recover+50
-		<option value="10"> Drill arm 1, drill arm 1, attack+10, jet attack 1
-		<option value="11"> wide wave 1, shark attack 1, shark attack 1, wide wave 1
-		<option value="12"> Grand wave 2, buzz saw 1, buzz saw 1, paralyze plus
-		<option value="13"> Ice spin 1, attack+10, wide wave 1, wide wave 1
-		<option value="14"> shark attack 1, paralyze plus, gravity plus, shark attack 1
-		<option value="15"> air spread 3, plus cannon, buzz saw 2, buzz saw 2
-		<option value="16"> bushido 1, bushido 1, buzz saw 2, paralyze plus
-		<option value="17"> bubble hook 1, wide wave 2, paralyze plus, bubble hook 1
-		<option value="18"> beast slap 2, beast slap 2, drill arm 1, plus cannon
-		<option value="19"> mad fire 1, mad fire 1, heat upper 2, heat upper 2
-		<option value="1A"> time bomb 1, heat upper 2, mad fire 1, attack+10
-		<option value="1B"> pollon shot 1, shuriken 2, acorn bomb 1, arach attack 1
-		<option value="1C"> acorn bomb 1, acorn bomb 1, pollon shot 1, pollon shot 1
-		<option value="1D"> flash strike 3, flash strike 3, stealth lazer 2, thunder head 1
-		<option value="1E"> stealth lazer 2, paralyze plus, thunder head 1, mummy hand 1
-		<option value="1F"> drill arm 3, buki 1, heavy cannon, typhoon dance
-		<option value="20"> time bomb 2, mech flame 1, heat upper 3, mad fire 2
-		<option value="21"> beast slap 3, beast slap 2, double eater, great axe
-		<option value="22"> wide wave 3, shark attack 3, wide wave 2, shark attack 3
-		<option value="23"> time bomb 2, heat upper 3, mad fire 3, attack panel
-		<option value="24"> pollon shot 3, shuriken 2, acorn bomb 3, arach attack 3
-		<option value="25"> flash strike 3, thunder head 2, flash strike 3, stealth lazer 2
-		<option value="26"> drill arm 3, drill arm 2, paralyze plus, buki 3
-		<option value="27"> stealth lazer 3, paralyze plus, thunder head 2, mummy hand 3
-		<option value="28"> mech flame 2, heat upper 3, time bomb 3, mad fire 3
-		<option value="29"> bubble hook 3, bubble hook 3, paralyze plus, wide wave 3
-		<option value="2A"> shuriken 3, arach attack 3, acorn bomb 3, wood slash
-		<option value="2B"> flash strike 3, stealth lazer 3, thunder head 3, elec slash
-		<option value="2C"> tornado dance, windy attack 3, drill arm 3, buki 3
-		<option value="2D"> plasma gun, stealth lazer 2, mummy hand 2, thunder head 1
-		<option value="2E"> green ink, arach attack 1, shuriken 1, pollon shot 2
-		<option value="2F"> whistle, drill arm 1, drill arm 2, windy attack 1
-		<option value="30"> bubble hook 1, bubble hook 1, flash strike 2, thunder head 2
-		<option value="31"> black ink, flash strike 2, bubble hook 1, mummy hand 2
-		<option value="32"> windy attack 1, windy attack 1, noise wizard 1, noise wizard 2
-		<option value="33"> buzz saw 2, grand wave 2, shuriken 1, ice spin 1
-		<option value="34"> heavy cannon, drill arm 2, heat upper 2, big drop 1
-		<option value="35"> Mal wizard 1, bubble hook 1, elec slash, arach attack 1
-		<option value="36"> barrier, cannon, cannon, cannon
-		<option value="37"> double eater, whistle, beast slap 3, great axe
-		<option value="38"> acorn bomb 2, acorn bomb 1, mech flame 1, time bomb 3
-		<option value="39"> ice grenade, ice grenade, shark attack 2, wide wave 3
-		<option value="3A"> bushido 3, bushido 3, bushido 2, bushido 1
-		<option value="3B"> synch hook 1, freeze knuckle, heat upper 3, stun knuckle
-		<option value="3C"> fire+30, mech flame 3, mad fire 3, Ox fire V2
-		<option value="3D"> aqua+30, shark attack 3, bubble hook 3, diamond ice V2
-		<option value="3E"> shuriken 3, wide wave 3, stealth lazer 3, smile coin 3
-		<option value="3F"> mech flame 3, dance fire 3, mad fire 3, heat upper 3
-		<option value="40"> ice spin 3, wide wave 2, shark attack 3, bubble hook 3
-		<option value="41"> Skull arrow 3, skull arrow 3, jet attack 3, buki 3
-		<option value="42"> beast slap 3, beast slap 3, mal wizard 3, scythe 1
-		<option value="43"> tornado dance, air burst 3, vulcan seed 1, machine gun 3
-		<option value="44"> panic cloud, panic cloud, flash strike 3, pollon shot 3
-		<option value="45"> elec slash, mummy hand 3, arach attack 3, earth thunder 3
-		<option value="46"> machine flame 3, white meteor, big drop 3, time bomb 3
-		<option value="47"> mini grenade 1, sword, wide sword, long sword
-		<option value="48"> windy attack 3, tornado dance, squall 3, scythe 3
-		<option value="49"> sword fighter 3, elec slash, wood slash, spin blade 1
-		<option value="4A"> ice grenade, wide wave 3, shark attack 3, heat axe
-		<option value="4B"> great axe, buki 3, drill arm 3, break sabre
-		<option value="4C"> mad fire 3, time bomb 3, kilo bomb 3, kilo bomb 3
-		<option value="4D"> elec+30, flash strike 3, earth thunder 3, spade magnes V3
-		<option value="4E"> wood+30, squall 3, vulcan seed 1, club strong V3
-		<option value="4F"> break sabre, drill arm 3, sword fighter 3, acid ace V3
-		<option value="50"> stun knuckle, freeze knuckle, poisen knuckle, destroy upper
-		<option value="51"> flash strike 2, shuriken 2, heat upper 2, shark attack 2
-		<option value="52"> wood slash, arach attack 2, stealth lazer 2, shuriken 2
-		<option value="53"> meteorite barrage (Big bang), gravity plus, wide wave 1, beast slap 1
-		<option value="54"> atomic blazer (Big bang), attack+10, heat upper 1, beast slap 1
-		<option value="55"> beast slap 1, gravity plus, ice spin 1, buzz saw 1
-		<option value="56"> heat upper 2, mad fire 1, time bomb 2, dance fire 1
-		<option value="57"> wide wave 2, shark attack 2, blue ink, ice grenade
-		<option value="58"> flash strike 3, elec slash, elec slash, thunder head 2
-		<option value="59"> pollon shot 3, vulcan seed 1, shuriken 3, vulcan seed 2
-		<option value="5A"> typhoon dance, tornado dance, windy attack 3, scythe 3
-		<option value="5B"> heat upper 3, buki 3, break sabre, big drop 3
-		<option value="5C"> grand wave 3, sword fighter 3, noise wizard 2, drill arm 3
-		<option value="5D"> double eater, mal wizard 2, beast slap 3, jack corvus V1
-		<option value="5E"> double eater, bubble hook 3, wide wave 3, queen virgo V1
-		<option value="5F"> buki 3, heat upper 3, great axe, dread joker V1
-		<option value="60"> break sabre, stealth lazer 3, buzz saw 3, acid ace
+      <table name="indv_discrption" border="1">
+        <tr>
+          <td>rezon on<br />220F9EBE 00000001</td>
+        </tr>
+      </table>
 
-			</select>
-	</td>
-</tr>
-<tr>
-	<td>
-		NKG01:
-		<select name=nkg_01>
-		<option value="64"> none
-		<option value="00">♥1: Leo Kingdom Noise - Fire GA
-		<option value="01">♥2: Moaian Noise - Break+10
-		<option value="02">♥3: Taurus Fire Noise - Super Armor
-		<option value="03">♥4: Raid Noise - HP+250
-		<option value="04">♥5: Melamander Noise - Fire+10
-		<option value="05">♥6: Koma Noise - Atk Panel Support
-		<option value="06">♥7: Doom Count Noise - No Flash/Flash Body
-		<option value="07">♥8: Ku'i Noise - Big Drop/Heavy Dawn Charge
-		<option value="08">♥9: Mettenna Noise - Reflect
-		<option value="09">♥10: Bom Noise - Bombilzer Support
-		<option value="0A">♥11: Jack Corvus Noise - Fire+20
-		<option value="0B">♥12: Hot Roader Noise - HP+150
-		<option value="0C">♥1: Boodach Noise - HP+200
-		<option value="0D">♥2: Scorcher Noise - Mech Flame Charge
-		<option value="0E">♥3: Bubba Dance Noise - Atk+10 Support
-		<option value="0F">♥5: Sirius Noise - Break+20
-		<option value="10">♥7: Boom Noise - Fire+10
-		<option value="11">♥8: Libra Scales Noise - HP+400
-		<option value="12">♥9: Musashi Noise - Sword+10
-		<option value="13">♥10: Omega-Xis/War-Rock Copy - Double Eater Support
-		<option value="14">♥11: RockyG Noise - Cross Shot Charge
-		<option value="15">♥12: HarpNote Noise - Normal GA+
-		<option value="16">♥13: Grabity Noise - +Poison Panel
-		<option value="17">♥13: Apollo Flame Noise - First Aura
-		<option value="18">♦1: Hare Jet Noise - +Ice Panel
-		<option value="19">♦3: Blue Shark Noise - Aqua+10
-		<option value="1A">♦4: General Auriga Noise - Whistle Support
-		<option value="1B">♦5: Chakram Noise - BuzzSaw Charge
-		<option value="1C">♦6: Sno Roll Noise - First Barrier
-		<option value="1D">♦7: Diamond Ice Noise - Aqua+20
-		<option value="1E">♦9: Octo Ninja Noise - Black Ink Support
-		<option value="1F">♦10: Piran Noise - HP+250
-		<option value="20">♦11: Gooey Noise - No Gravity/Gravity Body
-		<option value="21">♦12: Lu Pelvis Noise - +Panic
-		<option value="22">♦13: Pegasus Magic - Aqua GA+
-		<option value="23">♦1: Wibbledee Noise - Aqua+10
-		<option value="24">♦2: Stream Cancer Noise - Ice Support
-		<option value="25">♦3: Spinguin Noise - Ice Spin Charge
-		<option value="26">♦4: Junk-O Noise - Break+10
-		<option value="27">♦5: Jammer Noise - HP+250
-		<option value="28">♦6: Yeti Blizzard Noise - No Freeze/Freeze Body
-		<option value="29">♦7: BoneArcher Noise - +Gravity
-		<option value="2A">♦8: Mal Wizard Noise - +ParaPnl
-		<option value="2B">♦10: Cannon Base Noise - HP+150
-		<option value="2C">♦11: Plesio Surf Noise - Paralyze+ Support
-		<option value="2D">♦12: Queen Virgo Noise - Mega Class+1
-		<option value="2E">♦13: Air Squiggle Noise - HP+250
-		<option value="2F">♦2: Cancer Bubble Noise - No Bubble/Bubble Body
-		<option value="30">♠2: Voltragon Noise - Elec+10
-		<option value="31">♠3: Moon Destroyer Noise - HP+300
-		<option value="32">♠4: Boom Bolt Noise - Panic Cloud Support
-		<option value="33">♠5: Eyez Noise - +Invis
-		<option value="34">♠6: Dark Reaper Noise - HP+200
-		<option value="35">♠7: Dark Phantom Noise - Under Shirt
-		<option value="36">♠8: Shock Mummy Noise - HP+150
-		<option value="37">♠9: Noise Wizard Noise - GNull Panel
-		<option value="38">♠10: Base Mortar Noise - Mad Vulcan Charge
-		<option value="39">♠11: Great Axe Noise - HP+250
-		<option value="3A">♠12: Peakaboo Noise - +Blind
-		<option value="3B">♠13: Rogue Noise - Sword+20
-		<option value="3C">♠1: McCleaver Noise - HP+200
-		<option value="3D">♠2: Bell Gong Noise - HP+150
-		<option value="3E">♠3: Smiles Noise - HP+150
-		<option value="3F">♠4: Zapper Noise - Flash Strike Charge
-		<option value="40">♠6: Crown Thunder Noise - Paralysis Stage Support
-		<option value="41">♠7: Lampis Noise - Elec+10
-		<option value="42">♠8: Zap Ace Noise - +Paralyze
-		<option value="43">♠9: Hollow Noise - No Paralyze/Paralyze Body
-		<option value="44">♠10: Spade Magnes Noise - Elec+20
-		<option value="45">♠11: Stealth Noise - HP+150
-		<option value="46">♠13: Magera Noise - Card Heal
-		<option value="47">♣1: Gemini Spark Noise - ElecGA+
-		<option value="48">♣1: Mu Defender Noise - Mu Technology Charge
-		<option value="49">♣2: Private Mop Noise - Wood+10
-		<option value="4A">♣4: Wolf Woods Noise - HP+400
-		<option value="4B">♣5: Mono Sword Noise - Sword+10
-		<option value="4C">♣6: Storm Noise - +Wind
-		<option value="4D">♣7: Grass Pollen Noise - +Wood Panel
-		<option value="4E">♣8: Kung Foo Kid Noise - Quick Gauge
-		<option value="4F">♣9: Club Strong Noise - Wood+20
-		<option value="50">♣11: Mat Jinn Noise - Grass Support
-		<option value="51">♣12: Puff Noise - Recover 30 Support
-		<option value="52">♣13: Arachnid Noise - HP+250
-		<option value="53">♣1: Rhino Horn Noise - HP+250
-		<option value="54">♣2: Terra Condor Noise - Air Shoes
-		<option value="55">♣3: Crowcar Noise - HP+250
-		<option value="56">♣4: Flit Noise - Wood+20
-		<option value="57">♣5: Dragon Sky Noise - Wood GA+
-		<option value="58">♣7: Nutty Noise - Spread Charge
-		<option value="59">♣8: Tropi Conga Noise - HP+250
-		<option value="5A">♣9: Fokx Noise - Anti Damage
-		<option value="5B">♣10: Murian Noise - Divide Line Support
-		<option value="5C">♣12: Queen Ophiuca Noise - HP+400
-		<option value="5D">♣13: ShuriKen Noise - Shuriken Charge
-		<option value="5E">♣6: Cygnus Wing Noise - Float Shoes
-		<option value="5F">★: Dread Joker Noise - Body Pack (Super Armor, Float Shoes, Air Shoes, Under Shirt)
-		<option value="60">★: Andromeda Noise - Max Buster
-		<option value="61">★: Acid Ace Noise - Auto Lock
-		<option value="62">★: Le Mu Noise - Invisible Support
-		<option value="63">★: Crimson Dragon Noise- HP+500
-</select>
-
-	</td>
-	<td>
-		NKG02:
-		<select name=nkg_02>
-		<option value="64"> none
-		<option value="00">♥1: Leo Kingdom Noise - Fire GA
-		<option value="01">♥2: Moaian Noise - Break+10
-		<option value="02">♥3: Taurus Fire Noise - Super Armor
-		<option value="03">♥4: Raid Noise - HP+250
-		<option value="04">♥5: Melamander Noise - Fire+10
-		<option value="05">♥6: Koma Noise - Atk Panel Support
-		<option value="06">♥7: Doom Count Noise - No Flash/Flash Body
-		<option value="07">♥8: Ku'i Noise - Big Drop/Heavy Dawn Charge
-		<option value="08">♥9: Mettenna Noise - Reflect
-		<option value="09">♥10: Bom Noise - Bombilzer Support
-		<option value="0A">♥11: Jack Corvus Noise - Fire+20
-		<option value="0B">♥12: Hot Roader Noise - HP+150
-		<option value="0C">♥1: Boodach Noise - HP+200
-		<option value="0D">♥2: Scorcher Noise - Mech Flame Charge
-		<option value="0E">♥3: Bubba Dance Noise - Atk+10 Support
-		<option value="0F">♥5: Sirius Noise - Break+20
-		<option value="10">♥7: Boom Noise - Fire+10
-		<option value="11">♥8: Libra Scales Noise - HP+400
-		<option value="12">♥9: Musashi Noise - Sword+10
-		<option value="13">♥10: Omega-Xis/War-Rock Copy - Double Eater Support
-		<option value="14">♥11: RockyG Noise - Cross Shot Charge
-		<option value="15">♥12: HarpNote Noise - Normal GA+
-		<option value="16">♥13: Grabity Noise - +Poison Panel
-		<option value="17">♥13: Apollo Flame Noise - First Aura
-		<option value="18">♦1: Hare Jet Noise - +Ice Panel
-		<option value="19">♦3: Blue Shark Noise - Aqua+10
-		<option value="1A">♦4: General Auriga Noise - Whistle Support
-		<option value="1B">♦5: Chakram Noise - BuzzSaw Charge
-		<option value="1C">♦6: Sno Roll Noise - First Barrier
-		<option value="1D">♦7: Diamond Ice Noise - Aqua+20
-		<option value="1E">♦9: Octo Ninja Noise - Black Ink Support
-		<option value="1F">♦10: Piran Noise - HP+250
-		<option value="20">♦11: Gooey Noise - No Gravity/Gravity Body
-		<option value="21">♦12: Lu Pelvis Noise - +Panic
-		<option value="22">♦13: Pegasus Magic - Aqua GA+
-		<option value="23">♦1: Wibbledee Noise - Aqua+10
-		<option value="24">♦2: Stream Cancer Noise - Ice Support
-		<option value="25">♦3: Spinguin Noise - Ice Spin Charge
-		<option value="26">♦4: Junk-O Noise - Break+10
-		<option value="27">♦5: Jammer Noise - HP+250
-		<option value="28">♦6: Yeti Blizzard Noise - No Freeze/Freeze Body
-		<option value="29">♦7: BoneArcher Noise - +Gravity
-		<option value="2A">♦8: Mal Wizard Noise - +ParaPnl
-		<option value="2B">♦10: Cannon Base Noise - HP+150
-		<option value="2C">♦11: Plesio Surf Noise - Paralyze+ Support
-		<option value="2D">♦12: Queen Virgo Noise - Mega Class+1
-		<option value="2E">♦13: Air Squiggle Noise - HP+250
-		<option value="2F">♦2: Cancer Bubble Noise - No Bubble/Bubble Body
-		<option value="30">♠2: Voltragon Noise - Elec+10
-		<option value="31">♠3: Moon Destroyer Noise - HP+300
-		<option value="32">♠4: Boom Bolt Noise - Panic Cloud Support
-		<option value="33">♠5: Eyez Noise - +Invis
-		<option value="34">♠6: Dark Reaper Noise - HP+200
-		<option value="35">♠7: Dark Phantom Noise - Under Shirt
-		<option value="36">♠8: Shock Mummy Noise - HP+150
-		<option value="37">♠9: Noise Wizard Noise - GNull Panel
-		<option value="38">♠10: Base Mortar Noise - Mad Vulcan Charge
-		<option value="39">♠11: Great Axe Noise - HP+250
-		<option value="3A">♠12: Peakaboo Noise - +Blind
-		<option value="3B">♠13: Rogue Noise - Sword+20
-		<option value="3C">♠1: McCleaver Noise - HP+200
-		<option value="3D">♠2: Bell Gong Noise - HP+150
-		<option value="3E">♠3: Smiles Noise - HP+150
-		<option value="3F">♠4: Zapper Noise - Flash Strike Charge
-		<option value="40">♠6: Crown Thunder Noise - Paralysis Stage Support
-		<option value="41">♠7: Lampis Noise - Elec+10
-		<option value="42">♠8: Zap Ace Noise - +Paralyze
-		<option value="43">♠9: Hollow Noise - No Paralyze/Paralyze Body
-		<option value="44">♠10: Spade Magnes Noise - Elec+20
-		<option value="45">♠11: Stealth Noise - HP+150
-		<option value="46">♠13: Magera Noise - Card Heal
-		<option value="47">♣1: Gemini Spark Noise - ElecGA+
-		<option value="48">♣1: Mu Defender Noise - Mu Technology Charge
-		<option value="49">♣2: Private Mop Noise - Wood+10
-		<option value="4A">♣4: Wolf Woods Noise - HP+400
-		<option value="4B">♣5: Mono Sword Noise - Sword+10
-		<option value="4C">♣6: Storm Noise - +Wind
-		<option value="4D">♣7: Grass Pollen Noise - +Wood Panel
-		<option value="4E">♣8: Kung Foo Kid Noise - Quick Gauge
-		<option value="4F">♣9: Club Strong Noise - Wood+20
-		<option value="50">♣11: Mat Jinn Noise - Grass Support
-		<option value="51">♣12: Puff Noise - Recover 30 Support
-		<option value="52">♣13: Arachnid Noise - HP+250
-		<option value="53">♣1: Rhino Horn Noise - HP+250
-		<option value="54">♣2: Terra Condor Noise - Air Shoes
-		<option value="55">♣3: Crowcar Noise - HP+250
-		<option value="56">♣4: Flit Noise - Wood+20
-		<option value="57">♣5: Dragon Sky Noise - Wood GA+
-		<option value="58">♣7: Nutty Noise - Spread Charge
-		<option value="59">♣8: Tropi Conga Noise - HP+250
-		<option value="5A">♣9: Fokx Noise - Anti Damage
-		<option value="5B">♣10: Murian Noise - Divide Line Support
-		<option value="5C">♣12: Queen Ophiuca Noise - HP+400
-		<option value="5D">♣13: ShuriKen Noise - Shuriken Charge
-		<option value="5E">♣6: Cygnus Wing Noise - Float Shoes
-		<option value="5F">★: Dread Joker Noise - Body Pack (Super Armor, Float Shoes, Air Shoes, Under Shirt)
-		<option value="60">★: Andromeda Noise - Max Buster
-		<option value="61">★: Acid Ace Noise - Auto Lock
-		<option value="62">★: Le Mu Noise - Invisible Support
-		<option value="63">★: Crimson Dragon Noise- HP+500
-		</select>
-	</td>
-	<td>
-		NKG03:
-		<select name=nkg_03>
-		<option value="64"> none
-		<option value="00">♥1: Leo Kingdom Noise - Fire GA
-		<option value="01">♥2: Moaian Noise - Break+10
-		<option value="02">♥3: Taurus Fire Noise - Super Armor
-		<option value="03">♥4: Raid Noise - HP+250
-		<option value="04">♥5: Melamander Noise - Fire+10
-		<option value="05">♥6: Koma Noise - Atk Panel Support
-		<option value="06">♥7: Doom Count Noise - No Flash/Flash Body
-		<option value="07">♥8: Ku'i Noise - Big Drop/Heavy Dawn Charge
-		<option value="08">♥9: Mettenna Noise - Reflect
-		<option value="09">♥10: Bom Noise - Bombilzer Support
-		<option value="0A">♥11: Jack Corvus Noise - Fire+20
-		<option value="0B">♥12: Hot Roader Noise - HP+150
-		<option value="0C">♥1: Boodach Noise - HP+200
-		<option value="0D">♥2: Scorcher Noise - Mech Flame Charge
-		<option value="0E">♥3: Bubba Dance Noise - Atk+10 Support
-		<option value="0F">♥5: Sirius Noise - Break+20
-		<option value="10">♥7: Boom Noise - Fire+10
-		<option value="11">♥8: Libra Scales Noise - HP+400
-		<option value="12">♥9: Musashi Noise - Sword+10
-		<option value="13">♥10: Omega-Xis/War-Rock Copy - Double Eater Support
-		<option value="14">♥11: RockyG Noise - Cross Shot Charge
-		<option value="15">♥12: HarpNote Noise - Normal GA+
-		<option value="16">♥13: Grabity Noise - +Poison Panel
-		<option value="17">♥13: Apollo Flame Noise - First Aura
-		<option value="18">♦1: Hare Jet Noise - +Ice Panel
-		<option value="19">♦3: Blue Shark Noise - Aqua+10
-		<option value="1A">♦4: General Auriga Noise - Whistle Support
-		<option value="1B">♦5: Chakram Noise - BuzzSaw Charge
-		<option value="1C">♦6: Sno Roll Noise - First Barrier
-		<option value="1D">♦7: Diamond Ice Noise - Aqua+20
-		<option value="1E">♦9: Octo Ninja Noise - Black Ink Support
-		<option value="1F">♦10: Piran Noise - HP+250
-		<option value="20">♦11: Gooey Noise - No Gravity/Gravity Body
-		<option value="21">♦12: Lu Pelvis Noise - +Panic
-		<option value="22">♦13: Pegasus Magic - Aqua GA+
-		<option value="23">♦1: Wibbledee Noise - Aqua+10
-		<option value="24">♦2: Stream Cancer Noise - Ice Support
-		<option value="25">♦3: Spinguin Noise - Ice Spin Charge
-		<option value="26">♦4: Junk-O Noise - Break+10
-		<option value="27">♦5: Jammer Noise - HP+250
-		<option value="28">♦6: Yeti Blizzard Noise - No Freeze/Freeze Body
-		<option value="29">♦7: BoneArcher Noise - +Gravity
-		<option value="2A">♦8: Mal Wizard Noise - +ParaPnl
-		<option value="2B">♦10: Cannon Base Noise - HP+150
-		<option value="2C">♦11: Plesio Surf Noise - Paralyze+ Support
-		<option value="2D">♦12: Queen Virgo Noise - Mega Class+1
-		<option value="2E">♦13: Air Squiggle Noise - HP+250
-		<option value="2F">♦2: Cancer Bubble Noise - No Bubble/Bubble Body
-		<option value="30">♠2: Voltragon Noise - Elec+10
-		<option value="31">♠3: Moon Destroyer Noise - HP+300
-		<option value="32">♠4: Boom Bolt Noise - Panic Cloud Support
-		<option value="33">♠5: Eyez Noise - +Invis
-		<option value="34">♠6: Dark Reaper Noise - HP+200
-		<option value="35">♠7: Dark Phantom Noise - Under Shirt
-		<option value="36">♠8: Shock Mummy Noise - HP+150
-		<option value="37">♠9: Noise Wizard Noise - GNull Panel
-		<option value="38">♠10: Base Mortar Noise - Mad Vulcan Charge
-		<option value="39">♠11: Great Axe Noise - HP+250
-		<option value="3A">♠12: Peakaboo Noise - +Blind
-		<option value="3B">♠13: Rogue Noise - Sword+20
-		<option value="3C">♠1: McCleaver Noise - HP+200
-		<option value="3D">♠2: Bell Gong Noise - HP+150
-		<option value="3E">♠3: Smiles Noise - HP+150
-		<option value="3F">♠4: Zapper Noise - Flash Strike Charge
-		<option value="40">♠6: Crown Thunder Noise - Paralysis Stage Support
-		<option value="41">♠7: Lampis Noise - Elec+10
-		<option value="42">♠8: Zap Ace Noise - +Paralyze
-		<option value="43">♠9: Hollow Noise - No Paralyze/Paralyze Body
-		<option value="44">♠10: Spade Magnes Noise - Elec+20
-		<option value="45">♠11: Stealth Noise - HP+150
-		<option value="46">♠13: Magera Noise - Card Heal
-		<option value="47">♣1: Gemini Spark Noise - ElecGA+
-		<option value="48">♣1: Mu Defender Noise - Mu Technology Charge
-		<option value="49">♣2: Private Mop Noise - Wood+10
-		<option value="4A">♣4: Wolf Woods Noise - HP+400
-		<option value="4B">♣5: Mono Sword Noise - Sword+10
-		<option value="4C">♣6: Storm Noise - +Wind
-		<option value="4D">♣7: Grass Pollen Noise - +Wood Panel
-		<option value="4E">♣8: Kung Foo Kid Noise - Quick Gauge
-		<option value="4F">♣9: Club Strong Noise - Wood+20
-		<option value="50">♣11: Mat Jinn Noise - Grass Support
-		<option value="51">♣12: Puff Noise - Recover 30 Support
-		<option value="52">♣13: Arachnid Noise - HP+250
-		<option value="53">♣1: Rhino Horn Noise - HP+250
-		<option value="54">♣2: Terra Condor Noise - Air Shoes
-		<option value="55">♣3: Crowcar Noise - HP+250
-		<option value="56">♣4: Flit Noise - Wood+20
-		<option value="57">♣5: Dragon Sky Noise - Wood GA+
-		<option value="58">♣7: Nutty Noise - Spread Charge
-		<option value="59">♣8: Tropi Conga Noise - HP+250
-		<option value="5A">♣9: Fokx Noise - Anti Damage
-		<option value="5B">♣10: Murian Noise - Divide Line Support
-		<option value="5C">♣12: Queen Ophiuca Noise - HP+400
-		<option value="5D">♣13: ShuriKen Noise - Shuriken Charge
-		<option value="5E">♣6: Cygnus Wing Noise - Float Shoes
-		<option value="5F">★: Dread Joker Noise - Body Pack (Super Armor, Float Shoes, Air Shoes, Under Shirt)
-		<option value="60">★: Andromeda Noise - Max Buster
-		<option value="61">★: Acid Ace Noise - Auto Lock
-		<option value="62">★: Le Mu Noise - Invisible Support
-		<option value="63">★: Crimson Dragon Noise- HP+500
-</select>
-	</td>
-	<td>
-		NKG04:
-		<select name=nkg_04>
-		<option value="64"> none
-		<option value="00">♥1: Leo Kingdom Noise - Fire GA
-		<option value="01">♥2: Moaian Noise - Break+10
-		<option value="02">♥3: Taurus Fire Noise - Super Armor
-		<option value="03">♥4: Raid Noise - HP+250
-		<option value="04">♥5: Melamander Noise - Fire+10
-		<option value="05">♥6: Koma Noise - Atk Panel Support
-		<option value="06">♥7: Doom Count Noise - No Flash/Flash Body
-		<option value="07">♥8: Ku'i Noise - Big Drop/Heavy Dawn Charge
-		<option value="08">♥9: Mettenna Noise - Reflect
-		<option value="09">♥10: Bom Noise - Bombilzer Support
-		<option value="0A">♥11: Jack Corvus Noise - Fire+20
-		<option value="0B">♥12: Hot Roader Noise - HP+150
-		<option value="0C">♥1: Boodach Noise - HP+200
-		<option value="0D">♥2: Scorcher Noise - Mech Flame Charge
-		<option value="0E">♥3: Bubba Dance Noise - Atk+10 Support
-		<option value="0F">♥5: Sirius Noise - Break+20
-		<option value="10">♥7: Boom Noise - Fire+10
-		<option value="11">♥8: Libra Scales Noise - HP+400
-		<option value="12">♥9: Musashi Noise - Sword+10
-		<option value="13">♥10: Omega-Xis/War-Rock Copy - Double Eater Support
-		<option value="14">♥11: RockyG Noise - Cross Shot Charge
-		<option value="15">♥12: HarpNote Noise - Normal GA+
-		<option value="16">♥13: Grabity Noise - +Poison Panel
-		<option value="17">♥13: Apollo Flame Noise - First Aura
-		<option value="18">♦1: Hare Jet Noise - +Ice Panel
-		<option value="19">♦3: Blue Shark Noise - Aqua+10
-		<option value="1A">♦4: General Auriga Noise - Whistle Support
-		<option value="1B">♦5: Chakram Noise - BuzzSaw Charge
-		<option value="1C">♦6: Sno Roll Noise - First Barrier
-		<option value="1D">♦7: Diamond Ice Noise - Aqua+20
-		<option value="1E">♦9: Octo Ninja Noise - Black Ink Support
-		<option value="1F">♦10: Piran Noise - HP+250
-		<option value="20">♦11: Gooey Noise - No Gravity/Gravity Body
-		<option value="21">♦12: Lu Pelvis Noise - +Panic
-		<option value="22">♦13: Pegasus Magic - Aqua GA+
-		<option value="23">♦1: Wibbledee Noise - Aqua+10
-		<option value="24">♦2: Stream Cancer Noise - Ice Support
-		<option value="25">♦3: Spinguin Noise - Ice Spin Charge
-		<option value="26">♦4: Junk-O Noise - Break+10
-		<option value="27">♦5: Jammer Noise - HP+250
-		<option value="28">♦6: Yeti Blizzard Noise - No Freeze/Freeze Body
-		<option value="29">♦7: BoneArcher Noise - +Gravity
-		<option value="2A">♦8: Mal Wizard Noise - +ParaPnl
-		<option value="2B">♦10: Cannon Base Noise - HP+150
-		<option value="2C">♦11: Plesio Surf Noise - Paralyze+ Support
-		<option value="2D">♦12: Queen Virgo Noise - Mega Class+1
-		<option value="2E">♦13: Air Squiggle Noise - HP+250
-		<option value="2F">♦2: Cancer Bubble Noise - No Bubble/Bubble Body
-		<option value="30">♠2: Voltragon Noise - Elec+10
-		<option value="31">♠3: Moon Destroyer Noise - HP+300
-		<option value="32">♠4: Boom Bolt Noise - Panic Cloud Support
-		<option value="33">♠5: Eyez Noise - +Invis
-		<option value="34">♠6: Dark Reaper Noise - HP+200
-		<option value="35">♠7: Dark Phantom Noise - Under Shirt
-		<option value="36">♠8: Shock Mummy Noise - HP+150
-		<option value="37">♠9: Noise Wizard Noise - GNull Panel
-		<option value="38">♠10: Base Mortar Noise - Mad Vulcan Charge
-		<option value="39">♠11: Great Axe Noise - HP+250
-		<option value="3A">♠12: Peakaboo Noise - +Blind
-		<option value="3B">♠13: Rogue Noise - Sword+20
-		<option value="3C">♠1: McCleaver Noise - HP+200
-		<option value="3D">♠2: Bell Gong Noise - HP+150
-		<option value="3E">♠3: Smiles Noise - HP+150
-		<option value="3F">♠4: Zapper Noise - Flash Strike Charge
-		<option value="40">♠6: Crown Thunder Noise - Paralysis Stage Support
-		<option value="41">♠7: Lampis Noise - Elec+10
-		<option value="42">♠8: Zap Ace Noise - +Paralyze
-		<option value="43">♠9: Hollow Noise - No Paralyze/Paralyze Body
-		<option value="44">♠10: Spade Magnes Noise - Elec+20
-		<option value="45">♠11: Stealth Noise - HP+150
-		<option value="46">♠13: Magera Noise - Card Heal
-		<option value="47">♣1: Gemini Spark Noise - ElecGA+
-		<option value="48">♣1: Mu Defender Noise - Mu Technology Charge
-		<option value="49">♣2: Private Mop Noise - Wood+10
-		<option value="4A">♣4: Wolf Woods Noise - HP+400
-		<option value="4B">♣5: Mono Sword Noise - Sword+10
-		<option value="4C">♣6: Storm Noise - +Wind
-		<option value="4D">♣7: Grass Pollen Noise - +Wood Panel
-		<option value="4E">♣8: Kung Foo Kid Noise - Quick Gauge
-		<option value="4F">♣9: Club Strong Noise - Wood+20
-		<option value="50">♣11: Mat Jinn Noise - Grass Support
-		<option value="51">♣12: Puff Noise - Recover 30 Support
-		<option value="52">♣13: Arachnid Noise - HP+250
-		<option value="53">♣1: Rhino Horn Noise - HP+250
-		<option value="54">♣2: Terra Condor Noise - Air Shoes
-		<option value="55">♣3: Crowcar Noise - HP+250
-		<option value="56">♣4: Flit Noise - Wood+20
-		<option value="57">♣5: Dragon Sky Noise - Wood GA+
-		<option value="58">♣7: Nutty Noise - Spread Charge
-		<option value="59">♣8: Tropi Conga Noise - HP+250
-		<option value="5A">♣9: Fokx Noise - Anti Damage
-		<option value="5B">♣10: Murian Noise - Divide Line Support
-		<option value="5C">♣12: Queen Ophiuca Noise - HP+400
-		<option value="5D">♣13: ShuriKen Noise - Shuriken Charge
-		<option value="5E">♣6: Cygnus Wing Noise - Float Shoes
-		<option value="5F">★: Dread Joker Noise - Body Pack (Super Armor, Float Shoes, Air Shoes, Under Shirt)
-		<option value="60">★: Andromeda Noise - Max Buster
-		<option value="61">★: Acid Ace Noise - Auto Lock
-		<option value="62">★: Le Mu Noise - Invisible Support
-		<option value="63">★: Crimson Dragon Noise- HP+500
-</select>
-	</td>
-	<td>
-		NKG05:
-		<select name=nkg_05>
-		<option value="64"> none
-		<option value="00">♥1: Leo Kingdom Noise - Fire GA
-		<option value="01">♥2: Moaian Noise - Break+10
-		<option value="02">♥3: Taurus Fire Noise - Super Armor
-		<option value="03">♥4: Raid Noise - HP+250
-		<option value="04">♥5: Melamander Noise - Fire+10
-		<option value="05">♥6: Koma Noise - Atk Panel Support
-		<option value="06">♥7: Doom Count Noise - No Flash/Flash Body
-		<option value="07">♥8: Ku'i Noise - Big Drop/Heavy Dawn Charge
-		<option value="08">♥9: Mettenna Noise - Reflect
-		<option value="09">♥10: Bom Noise - Bombilzer Support
-		<option value="0A">♥11: Jack Corvus Noise - Fire+20
-		<option value="0B">♥12: Hot Roader Noise - HP+150
-		<option value="0C">♥1: Boodach Noise - HP+200
-		<option value="0D">♥2: Scorcher Noise - Mech Flame Charge
-		<option value="0E">♥3: Bubba Dance Noise - Atk+10 Support
-		<option value="0F">♥5: Sirius Noise - Break+20
-		<option value="10">♥7: Boom Noise - Fire+10
-		<option value="11">♥8: Libra Scales Noise - HP+400
-		<option value="12">♥9: Musashi Noise - Sword+10
-		<option value="13">♥10: Omega-Xis/War-Rock Copy - Double Eater Support
-		<option value="14">♥11: RockyG Noise - Cross Shot Charge
-		<option value="15">♥12: HarpNote Noise - Normal GA+
-		<option value="16">♥13: Grabity Noise - +Poison Panel
-		<option value="17">♥13: Apollo Flame Noise - First Aura
-		<option value="18">♦1: Hare Jet Noise - +Ice Panel
-		<option value="19">♦3: Blue Shark Noise - Aqua+10
-		<option value="1A">♦4: General Auriga Noise - Whistle Support
-		<option value="1B">♦5: Chakram Noise - BuzzSaw Charge
-		<option value="1C">♦6: Sno Roll Noise - First Barrier
-		<option value="1D">♦7: Diamond Ice Noise - Aqua+20
-		<option value="1E">♦9: Octo Ninja Noise - Black Ink Support
-		<option value="1F">♦10: Piran Noise - HP+250
-		<option value="20">♦11: Gooey Noise - No Gravity/Gravity Body
-		<option value="21">♦12: Lu Pelvis Noise - +Panic
-		<option value="22">♦13: Pegasus Magic - Aqua GA+
-		<option value="23">♦1: Wibbledee Noise - Aqua+10
-		<option value="24">♦2: Stream Cancer Noise - Ice Support
-		<option value="25">♦3: Spinguin Noise - Ice Spin Charge
-		<option value="26">♦4: Junk-O Noise - Break+10
-		<option value="27">♦5: Jammer Noise - HP+250
-		<option value="28">♦6: Yeti Blizzard Noise - No Freeze/Freeze Body
-		<option value="29">♦7: BoneArcher Noise - +Gravity
-		<option value="2A">♦8: Mal Wizard Noise - +ParaPnl
-		<option value="2B">♦10: Cannon Base Noise - HP+150
-		<option value="2C">♦11: Plesio Surf Noise - Paralyze+ Support
-		<option value="2D">♦12: Queen Virgo Noise - Mega Class+1
-		<option value="2E">♦13: Air Squiggle Noise - HP+250
-		<option value="2F">♦2: Cancer Bubble Noise - No Bubble/Bubble Body
-		<option value="30">♠2: Voltragon Noise - Elec+10
-		<option value="31">♠3: Moon Destroyer Noise - HP+300
-		<option value="32">♠4: Boom Bolt Noise - Panic Cloud Support
-		<option value="33">♠5: Eyez Noise - +Invis
-		<option value="34">♠6: Dark Reaper Noise - HP+200
-		<option value="35">♠7: Dark Phantom Noise - Under Shirt
-		<option value="36">♠8: Shock Mummy Noise - HP+150
-		<option value="37">♠9: Noise Wizard Noise - GNull Panel
-		<option value="38">♠10: Base Mortar Noise - Mad Vulcan Charge
-		<option value="39">♠11: Great Axe Noise - HP+250
-		<option value="3A">♠12: Peakaboo Noise - +Blind
-		<option value="3B">♠13: Rogue Noise - Sword+20
-		<option value="3C">♠1: McCleaver Noise - HP+200
-		<option value="3D">♠2: Bell Gong Noise - HP+150
-		<option value="3E">♠3: Smiles Noise - HP+150
-		<option value="3F">♠4: Zapper Noise - Flash Strike Charge
-		<option value="40">♠6: Crown Thunder Noise - Paralysis Stage Support
-		<option value="41">♠7: Lampis Noise - Elec+10
-		<option value="42">♠8: Zap Ace Noise - +Paralyze
-		<option value="43">♠9: Hollow Noise - No Paralyze/Paralyze Body
-		<option value="44">♠10: Spade Magnes Noise - Elec+20
-		<option value="45">♠11: Stealth Noise - HP+150
-		<option value="46">♠13: Magera Noise - Card Heal
-		<option value="47">♣1: Gemini Spark Noise - ElecGA+
-		<option value="48">♣1: Mu Defender Noise - Mu Technology Charge
-		<option value="49">♣2: Private Mop Noise - Wood+10
-		<option value="4A">♣4: Wolf Woods Noise - HP+400
-		<option value="4B">♣5: Mono Sword Noise - Sword+10
-		<option value="4C">♣6: Storm Noise - +Wind
-		<option value="4D">♣7: Grass Pollen Noise - +Wood Panel
-		<option value="4E">♣8: Kung Foo Kid Noise - Quick Gauge
-		<option value="4F">♣9: Club Strong Noise - Wood+20
-		<option value="50">♣11: Mat Jinn Noise - Grass Support
-		<option value="51">♣12: Puff Noise - Recover 30 Support
-		<option value="52">♣13: Arachnid Noise - HP+250
-		<option value="53">♣1: Rhino Horn Noise - HP+250
-		<option value="54">♣2: Terra Condor Noise - Air Shoes
-		<option value="55">♣3: Crowcar Noise - HP+250
-		<option value="56">♣4: Flit Noise - Wood+20
-		<option value="57">♣5: Dragon Sky Noise - Wood GA+
-		<option value="58">♣7: Nutty Noise - Spread Charge
-		<option value="59">♣8: Tropi Conga Noise - HP+250
-		<option value="5A">♣9: Fokx Noise - Anti Damage
-		<option value="5B">♣10: Murian Noise - Divide Line Support
-		<option value="5C">♣12: Queen Ophiuca Noise - HP+400
-		<option value="5D">♣13: ShuriKen Noise - Shuriken Charge
-		<option value="5E">♣6: Cygnus Wing Noise - Float Shoes
-		<option value="5F">★: Dread Joker Noise - Body Pack (Super Armor, Float Shoes, Air Shoes, Under Shirt)
-		<option value="60">★: Andromeda Noise - Max Buster
-		<option value="61">★: Acid Ace Noise - Auto Lock
-		<option value="62">★: Le Mu Noise - Invisible Support
-		<option value="63">★: Crimson Dragon Noise- HP+500
-</select>
-	</td>
-</tr>
-
-
-
-											<td colspan="5"><input type="button" value="generate" name="gen" onclick= "generate()">
-											<input type="reset" value="reset">
-
-											<br>
-											<textarea cols="40" rows="16" name="ans"></textarea></td>
-</tr>
-										</form>
-
-
-
-									<script type="text/javascript">
-									function generate(){
-											//ノイズチェンジ
-											valc1 = document.indv.noize.value;
-											//レゾンチェンジ
-											valc2 = document.indv.rezon.value;
-											//ホワイトチェンジ
-											valc3 = document.indv.whitecard.value;
-											//ノイズカードチェンジ
-											valc4 = document.indv.nkg_01.value;
-											valc5 = document.indv.nkg_02.value;
-											valc6 = document.indv.nkg_03.value;
-											valc7 = document.indv.nkg_04.value;
-											valc8 = document.indv.nkg_05.value;
-											//レゾンフラグ
-
-
-
-
-
-
-
-
-
-											document.indv.ans.value
-																	= "220F39A0 000000" + valc1 + "\n"
-																  + "220F399E 000000" + valc2 + "\n"
-																	+ "220F39A1 000000" + valc3 + "\n"
-																	+ "220FA0F4 000000" + valc4 + "\n"
-																	+ "220FA0F6 000000" + valc5 + "\n"
-																	+ "220FA0F8 000000" + valc6 + "\n"
-																	+ "220FA0FA 000000" + valc7 + "\n"
-																	+ "220FA0FC 000000" + valc8 + "\n"
-
-
-
-
-
-
-
-											}
-
-
-									</script>
-										</table>
-
-											<table name="indv_discrption" border="1">
-												<tr><td>
-												rezon on<br>220F9EBE 00000001  </td></tr>
-
-											</table>
-
-
-
-
-
-
-
-
-
-
-						Created by：Thistel<br>
-	                	release date：2019/09/17 ~<br>
-	                	Any quetions any problems↓<br>
-	                	twitter<a href="https://twitter.com/_X__XD_pad">@_X__XD_pad</a>
-	                	</div>
-	</body>
-	</html>
+      Created by：Thistel<br />
+      release date：2019/09/17 ~<br />
+      Any quetions any problems↓<br />
+      twitter<a href="https://twitter.com/_X__XD_pad">@_X__XD_pad</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+# npm
+node_modules/
+package-lock.json
+
+# Prettier
+.prettierrc.json
+.prettierignore
+
+# OS
+.DS_Store
+
+# エディタ
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ログ
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
