@@ -1,9 +1,7 @@
 # npm
 node_modules/
-package-lock.json
 
 # Prettier
-.prettierrc.json
 .prettierignore
 
 # OS
