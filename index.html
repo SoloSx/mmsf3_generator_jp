@@ -1,72 +1,76 @@
-　
-<meta name="author" content="Thiste">
-<meta name="viewpoint" content="user-scalable">
-<meta name="description" content="流星のロックマン3ブラックエース、レッドジョーカーのチートコードの生成をするジェネレーターです"/>
-<meta name="keyword" content="流星のロックマン,流星ロックマン3,BA,RJ,改造,チート,PAR,チート,チートコード"/>
-<title> MMSF3 流星のロックマン3 チートコードジェネレーター</title>
-<link rel="stylesheet" href="mmsf3gn_index.css">
-</head>
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta name="author" content="Thiste" />
+    <meta name="viewpoint" content="user-scalable" />
+    <meta name="description" content="流星のロックマン3ブラックエース、レッドジョーカーのチートコードの生成をするジェネレーターです" />
+    <meta name="keyword" content="流星のロックマン,流星ロックマン3,BA,RJ,改造,チート,PAR,チート,チートコード" />
+    <title>MMSF3 流星のロックマン3 チートコードジェネレーター</title>
+    <link rel="stylesheet" href="mmsf3gn_index.css" />
+  </head>
 
+  <body>
+    <div id="titie-text" class="explanation">
+      <div class="shrt-sentence">
+        <h1 class="h3">MMSF3チートコードジェネレーター</h1>
+        <p>注意書き※※改造コードを使用する際は自己責任でお願いしますby製作者※※</p>
+        <text></text>
+      </div>
+    </div>
 
+    <div class="sidebar">
+      <h2 class="setting">Switch the language Are you... (言語を選択します)</h2>
+      <ul class="setting-column">
+        <li>
+          <a href="mmsf_indv_set_rj.html" class="setting-link">Japanese</a>
+        </li>
+        <li>
+          <a href="mmsf_indv_set_en_rj.html" class="setting-link">English</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>説明(必要ない手順はスキップでお願いします)</h2>
+      <p>
+        <b>ロックマン設定について</b><br />
+        レゾンフラグonとはロックマン個人のレゾンを反映させる前提コードなのでレゾン使用不可の方は必ずコードの入力をお願いします。
+      </p>
+      <br /><br /><br /><br />
+      <p>
+        <b>ブラザー設定について</b><br />
+        ブラザー偽造のためにまずシークレットサテライトサーバー(以下SSS)のアクセスポートを開放し　次にSSSのアクセスポートの追加をし、
+        ブラザー6枠埋める、またはライバルノイズで埋める必要があります。そして偽造ブラザーのコードの入力をします。<br /><br />
+        次にキズナ力を上げるために各ブラザーキズナ力+120とブラザー戦闘回数MAX120回のチートコードを入力します。(最大900上昇)<br /><br />
+        またブラザーのレゾンを共有するためにブラザーのクリアフラグとレゾンフラフのチートコードを入力します。こちらは偽造ブラザーを作った方は必須となるのでお願いします。
+        <b>注意</b
+        >：最後に各ブラザーのレゾンのチーム名の統一なのですがチーム名の文字変更コードを把握してないため記載されてるコードはゲーム上では空欄となっていますが、ゲーム内の個人ロックマンの設定にて"ブラザーとおなじチーム名にする"の選択をすると
+        反映されます。(以下の理由により偽造ブラザーと正規ブラザーを両方使用ははおすすめしません)
+      </p>
+      <br /><br /><br /><br />
+      <p>
+        <b>ジェネレーターについて</b><br />
+        ノイズフォースビッグバンとギャラクシーアドバンスのカードは記載していません。希望があれば更新します。<br />
+        レイアウトの更新はまた気が向いた時にいます。　サテライトサーバーのジェネレーターも作成する予定です<br /><br />
 
+        First of all, English is my second language so if sentences does not make sence to you guys, please contact me on twitter and I will be able
+        to fix.
+      </p>
+      <br /><br /><br /><br />
 
-<body>
-		<div><id="titie-text" class="explanation">
-		<div class="shrt-sentence">
-			<h1 class="h3">MMSF3チートコードジェネレーター</h1>
-			<p1> 注意書き※※改造コードを使用する際は自己責任でお願いしますby製作者※※<p1>
-			<text></text>
-		</div>
-		</div>
-
-	<div class="sidebar">
-			<h2 class="setting"> Switch the language Are you... (言語を選択します)</h2>
-			<ul class="setting-column">
-				<li>
-					<a href="mmsf_indv_set_rj.html" class="setting-link ">Japanese</a>
-				</li>
-					<li>
-					<a href="mmsf_indv_set_en_rj.html" class="setting-link ">English</a>
-				</li>
-				</li>
-			</ul>
-	</div>
-  <div><h2>
-  説明(必要ない手順はスキップでお願いします)</h2>
-  <p1><b>ロックマン設定について</b><br>
-    レゾンフラグonとはロックマン個人のレゾンを反映させる前提コードなのでレゾン使用不可の方は必ずコードの入力をお願いします。
-    </p1><br><br><br><br>
-    <p2><b>ブラザー設定について</b><br>
-      ブラザー偽造のためにまずシークレットサテライトサーバー(以下SSS)のアクセスポートを開放し　次にSSSのアクセスポートの追加をし、
-      ブラザー6枠埋める、またはライバルノイズで埋める必要があります。そして偽造ブラザーのコードの入力をします。<br><br>
-      次にキズナ力を上げるために各ブラザーキズナ力+120とブラザー戦闘回数MAX120回のチートコードを入力します。(最大900上昇)<br><br>
-      またブラザーのレゾンを共有するためにブラザーのクリアフラグとレゾンフラフのチートコードを入力します。こちらは偽造ブラザーを作った方は必須となるのでお願いします。
-      <B>注意</B>：最後に各ブラザーのレゾンのチーム名の統一なのですがチーム名の文字変更コードを把握してないため記載されてるコードはゲーム上では空欄となっていますが、ゲーム内の個人ロックマンの設定にて"ブラザーとおなじチーム名にする"の選択をすると
-      反映されます。(以下の理由により偽造ブラザーと正規ブラザーを両方使用ははおすすめしません)
-    </p2><br><br><br><br>
-    <p3><b>ジェネレーターについて</b><br>
-      ノイズフォースビッグバンとギャラクシーアドバンスのカードは記載していません。希望があれば更新します。<br>
-      レイアウトの更新はまた気が向いた時にいます。　サテライトサーバーのジェネレーターも作成する予定です<br><br>
-
-			First of all, English is my second language so if sentences does not make sence to you guys, please contact me on twitter and I will be able to fix.
-
-
-      </p3><br><br><br><br>
-
-      <p4><b>アップデート履歴</b></p4><br>
-      ・2019/09/17　公開<br>
-			・2019/09/22　英語版を作成 (release the English version)<br>
-	  	・2019/09/27　fixed queen ophiuca V3's value both of ver.<br>
-	  	・2019/09/22　メガクラスイリーガルカードのコード追加(両バージョン)<br>
-			・2019/10/17　レイアウトの変更、偽造ブラザーを作成した際にフォルダーに出現するように設定しました。フォルダー内でオンにする必要があります。<br>
-			・2019/10/17　adjust some layouts、Enable each Brother card in card folder。Need to set on in your folder 。<br>
-
-  </div>
-  <div>
-  	制作者：Thistel<br>
-            公開日：2019/09/17 ~<br>
-            なにかご質問、不具合があればこちらに↓ (Any problems any questions)<br>
-            Twitter<a href="https://twitter.com/_X__XD_pad">@_X__XD_pad</a>
-            </div>
-</body>
+      <p><b>アップデート履歴</b></p>
+      <br />
+      ・2019/09/17　公開<br />
+      ・2019/09/22　英語版を作成 (release the English version)<br />
+      ・2019/09/27　fixed queen ophiuca V3's value both of ver.<br />
+      ・2019/09/22　メガクラスイリーガルカードのコード追加(両バージョン)<br />
+      ・2019/10/17　レイアウトの変更、偽造ブラザーを作成した際にフォルダーに出現するように設定しました。フォルダー内でオンにする必要があります。<br />
+      ・2019/10/17　adjust some layouts、Enable each Brother card in card folder。Need to set on in your folder 。<br />
+    </div>
+    <div>
+      制作者：Thistel<br />
+      公開日：2019/09/17 ~<br />
+      なにかご質問、不具合があればこちらに↓ (Any problems any questions)<br />
+      Twitter<a href="https://twitter.com/_X__XD_pad">@_X__XD_pad</a>
+    </div>
+  </body>
 </html>
